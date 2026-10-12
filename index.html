@@ -1,0 +1,1995 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Explore Amlogic edge AI: Agent examples, SDKs, model resources and developer guides.">
+<title>Amlogic AI · Developer Portal</title>
+<style>
+:root{--blue:#073c99;--ink:#15243b;--muted:#728095;--line:#e3eaf3;--bg:#f5f8fc}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}button,input,a{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}button{cursor:pointer}a{text-decoration:none;color:inherit}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #63a4ff;outline-offset:3px}.shell{display:grid;grid-template-columns:236px minmax(0,1fr);min-height:100vh}aside{position:sticky;top:0;height:100vh;padding:30px 20px;background:#fff;border-right:1px solid var(--line);display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:12px;margin:0 8px 35px}.logo{display:grid;place-items:center;background:var(--blue);color:#fff;width:44px;height:44px;border-radius:13px;font-size:25px;font-weight:750}.brand strong{display:block;font-size:17px;line-height:1.25}.brand small{color:var(--muted);font-size:11px}.nav{display:grid;gap:8px}.nav button{border:0;background:none;color:#627088;text-align:left;padding:13px 16px;border-radius:9px;display:flex;align-items:center;gap:12px;font-weight:600}.nav button.active{color:var(--blue);background:#eaf1fc}.nav button:hover{background:#f0f5fb}.nav svg{width:19px;height:19px;flex-shrink:0}.aside-foot{margin-top:auto;padding:20px 10px 0;border-top:1px solid var(--line);color:var(--muted);font-size:11px}.aside-foot a{display:block;color:var(--blue);margin-top:8px}main{padding:34px 38px;max-width:1600px;width:100%;margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:26px}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--blue);font-weight:750}h1{margin:5px 0;font-size:27px;letter-spacing:-.6px}.subtitle{color:var(--muted);margin:0}.top-actions{display:flex;gap:12px;align-items:center}.search{background:#fff;border:1px solid var(--line);border-radius:9px;padding:10px 12px;display:flex;align-items:center;gap:8px}.search input{border:0;background:transparent;width:200px;outline:none;color:var(--ink)}.primary{display:inline-flex;align-items:center;justify-content:center;background:var(--blue);color:#fff;border:0;border-radius:9px;padding:11px 17px;font-weight:600;white-space:nowrap}.banner{border:1px solid #dbe7fa;background:linear-gradient(105deg,#eaf2ff,#f9fbff);border-radius:14px;padding:24px 28px;margin-bottom:25px;display:flex;align-items:center;justify-content:space-between;gap:20px}.banner h2{margin:0 0 5px;font-size:20px}.banner p{margin:0;color:#62738d}.banner-label{border:1px solid #cedcf2;background:#fff;border-radius:30px;padding:8px 15px;color:var(--blue);white-space:nowrap;font-size:12px}.toolbar{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:20px}.filters{display:flex;gap:8px;flex-wrap:wrap}.filters button{border:1px solid var(--line);background:#fff;color:#647086;border-radius:20px;padding:6px 15px}.filters button.active{background:#e8f0fe;border-color:#c3d5f3;color:var(--blue);font-weight:650}.count{font-size:12px;color:var(--muted);white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:23px;min-height:290px;display:flex;flex-direction:column;box-shadow:0 3px 12px #183b6510;transition:transform .18s,box-shadow .18s}.card:hover{transform:translateY(-3px);box-shadow:0 8px 22px #183b6515}.card-top{display:flex;align-items:start;justify-content:space-between;gap:10px}.icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;color:#fff}.icon svg{width:25px;height:25px}.status{font-size:11px;border-radius:5px;padding:3px 8px;background:#f0f3f7;color:#79869a}.status.ready{background:#eaf3fe;color:#23589c}.card h3{margin:16px 0 3px;font-size:19px}.english{font-size:12px;color:#8b96a7}.desc{font-size:13px;line-height:1.8;margin:12px 0 17px;color:#5c697b}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}.tag{background:#f0f5fc;border:1px solid #e0e8f4;border-radius:5px;color:#527099;font-size:11px;padding:2px 7px}.card-bottom{margin-top:auto;padding-top:15px;border-top:1px solid #edf1f7;display:flex;justify-content:space-between;align-items:center;gap:10px}.meta{font-size:11px;color:#8490a2}.link{color:var(--blue);background:#eaf1fc;border:1px solid #d3dff2;border-radius:7px;padding:6px 12px;font-size:12px;font-weight:650}.pending{color:#909aad;background:#f5f7fa;border-color:#e9edf3;cursor:default}footer{margin-top:30px;display:flex;justify-content:space-between;gap:15px;color:#8994a5;font-size:11px}footer button{border:0;background:none;color:var(--blue);padding:0}.empty{grid-column:1/-1;text-align:center;background:white;padding:60px;border:1px dashed var(--line);border-radius:14px;color:var(--muted)}dialog{max-width:640px;width:calc(100% - 40px);border:1px solid var(--line);border-radius:16px;padding:28px;color:var(--ink)}dialog::backdrop{background:#15243b66}dialog h2{margin-top:0}dialog code{background:#edf2fa;padding:2px 5px;border-radius:4px}dialog li{margin:10px 0}@media(min-width:1500px){.card{min-height:310px}}@media(max-width:1150px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.top{align-items:start;flex-direction:column}.top-actions{width:100%}.search{flex:1}.search input{width:100%}}@media(max-width:720px){.shell{grid-template-columns:1fr}aside{height:auto;position:static;padding:18px;border-right:0;border-bottom:1px solid var(--line)}.brand{margin:0 0 18px}.nav{display:flex;overflow:auto;gap:6px}.nav button{white-space:nowrap;padding:9px 12px}.nav svg,.aside-foot{display:none}main{padding:24px 18px}.grid{grid-template-columns:1fr}.banner{padding:20px}.banner-label{display:none}.toolbar{align-items:start}.count{padding-top:6px}.top-actions{flex-wrap:wrap}.search{min-width:180px}h1{font-size:24px}.card{min-height:270px}footer{flex-wrap:wrap}}@media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+/* Technology theme */
+aside{background:linear-gradient(170deg,#0b2451,#07172f);color:#fff;border:0}.logo{background:linear-gradient(135deg,#2968e2,#13aed5);box-shadow:0 0 25px #1886ee30;border:1px solid #71caff66}.brand small{color:#83a0c8}.nav button{color:#a1b6d3}.nav button.active{background:#1d4985;color:#fff;border:1px solid #5c9bed55;box-shadow:inset 3px 0 #63d6ff}.nav button:hover{background:#173660}.aside-foot{border-color:#304360;color:#7c99bd}.aside-foot a{color:#83ccff}.banner{position:relative;overflow:hidden;background:linear-gradient(110deg,#092d67,#0c4c93);border:1px solid #2860a0;min-height:170px;color:white;box-shadow:0 8px 22px #124d9220}.banner:before{content:'';position:absolute;inset:0;background-image:linear-gradient(#84b9f00e 1px,transparent 1px),linear-gradient(90deg,#84b9f00e 1px,transparent 1px);background-size:24px 24px;pointer-events:none}.banner>div{position:relative}.banner h2{font-size:29px;letter-spacing:-.6px}.banner p{color:#b8d4f6;max-width:510px}.chip-art{width:230px;height:130px;flex-shrink:0;filter:drop-shadow(0 0 8px #49baff66)}.chip-art svg{width:100%;height:100%}.card{border-top:3px solid #ccdcf1;box-shadow:0 4px 15px #14335f08}.card:hover{border-top-color:#2991d6;box-shadow:0 12px 26px #14335f15}.icon{box-shadow:0 4px 10px #12407315;background-image:linear-gradient(135deg,#ffffff15,#06194120)!important}.primary{background:linear-gradient(120deg,#10468f,#0862ba);box-shadow:0 4px 10px #125ab51c}.tag{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:10px}.eyebrow{letter-spacing:2.4px}.link:hover{background:#d9e9ff}.pending{font-size:11px}.search svg{display:block}.banner-label{display:none}@media(max-width:900px){.chip-art{width:150px}}@media(max-width:720px){.chip-art{display:none}.banner h2{font-size:25px}.nav button.active{box-shadow:inset 0 -2px #63d6ff}.banner{min-height:150px}}
+</style>
+</head>
+<body>
+<div class="shell"><aside><a class="brand" href="./"><span class="logo">A</span><span><strong>Amlogic AI</strong><small>EDGE DEVELOPER PORTAL</small></span></a><nav class="nav" aria-label="Resource navigation" id="nav"></nav><div class="aside-foot">ON-DEVICE AI · OPEN ECOSYSTEM<br>Amlogic Edge AI Ecosystem<a href="https://github.com/Amlogic-NN" target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a></div></aside>
+<main><header class="top"><div><div class="eyebrow">BUILD AI AT THE EDGE</div><h1 id="title">Agent Examples</h1><p class="subtitle" id="subtitle"></p></div><div class="top-actions"><label class="search"><span aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg></span><input id="search" type="search" aria-label="Search resources" placeholder="Search resources, capabilities, tags…"></label><a class="primary" href="https://github.com/Amlogic-NN" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></header>
+<section class="banner"><div><h2>Intelligence at the edge.</h2><p>Build with on-device models, open APIs and an extensible AI ecosystem.</p></div><div class="chip-art" aria-hidden="true"><svg viewBox="0 0 230 130" fill="none"><g stroke="#55c8ff" stroke-width="1.3"><path d="M0 25h65l20 20h30 M0 105h65l20-20h30 M230 25h-45l-20 20h-35 M230 105h-45l-20-20h-35 M115 0v30 M115 100v30 M150 0v30 M150 100v30"/><rect x="85" y="30" width="80" height="70" rx="12"/><rect x="93" y="38" width="64" height="54" rx="8"/><circle cx="35" cy="25" r="3"/><circle cx="195" cy="105" r="3"/></g><text x="125" y="61" text-anchor="middle" fill="white" font-size="17" font-weight="700">NPU</text><text x="125" y="78" text-anchor="middle" fill="#7dd3fc" font-size="9" letter-spacing="2">AMLOGIC</text></svg></div></section>
+<div class="toolbar"><div class="filters" id="filters" aria-label="Resource categories"></div><span class="count" id="count" aria-live="polite"></span></div><section class="grid" id="grid" aria-label="Resource list"></section>
+<footer><span>Amlogic AI Developer Portal · Community & Resources</span><button id="help">Publish & Customize</button></footer></main></div>
+<dialog id="guide"><h2>Publish & Customize</h2><ol><li>Upload this file as <code>index.html</code> to the root of your <code>amlogic-nn.github.io</code> repository.</li><li>Open Settings → Pages. Select Deploy from a branch, main, and /(root). Save.</li><li>Visit <code>https://amlogic-nn.github.io/</code> after deployment completes.</li><li>Edit the <code>RESOURCES</code> array to update names, descriptions, tags, release status and URLs.</li><li>Cards without a URL show “Coming Soon”. Check each resource against its project documentation before publishing.</li></ol><p>Reference scenario cards describe possible application workflows. They do not imply released projects or one-click deployment.</p><button class="primary" id="close">Got it</button></dialog>
+<script>
+/* CONTENT CONFIGURATION: edit SECTIONS and RESOURCES to maintain this portal. Empty URLs display Coming Soon. */
+const SECTIONS=[
+  {
+    "id": "agents",
+    "name": "Agent Examples",
+    "icon": "grid",
+    "desc": "Reference applications for building and extending on-device AI workflows."
+  },
+  {
+    "id": "skills",
+    "name": "Skills / MCP",
+    "icon": "layers",
+    "desc": "Explore vision, audio and tool integration resources for your Agent."
+  },
+  {
+    "id": "demos",
+    "name": "Model Demos & Benchmarks",
+    "icon": "eye",
+    "desc": "All 77 models in the Model Playground support list. Search by model name, quantization or platform. Updated October 12, 2026."
+  },
+  {
+    "id": "sdk",
+    "name": "SDK / Toolkit",
+    "icon": "code",
+    "desc": "Convert, quantize, compile and deploy models on Amlogic platforms."
+  },
+  {
+    "id": "models",
+    "name": "Model Hub",
+    "icon": "database",
+    "desc": "Find model packages and deployment resources for your target platform."
+  },
+  {
+    "id": "start",
+    "name": "Getting Started",
+    "icon": "book",
+    "desc": "Start with setup guides, inference examples and API integration."
+  }
+];
+const RESOURCES=[
+  {
+    "section": "agents",
+    "category": "Multimodal",
+    "name": "AI NAS Agent",
+    "en": "Local Media Search · Multimodal AI",
+    "desc": "Explore local media search and content management for home storage, including image retrieval, person search and media summaries.",
+    "tags": [
+      "image.search",
+      "face.search",
+      "media.summary"
+    ],
+    "meta": "Reference Scenario",
+    "status": "Planned Example",
+    "icon": "database",
+    "color": "#4884bd",
+    "url": ""
+  },
+  {
+    "section": "agents",
+    "category": "Vision",
+    "name": "AI Shopping Agent",
+    "en": "Visual Search · Product Discovery",
+    "desc": "A reference scenario for visual product recognition, information retrieval and recommendations.",
+    "tags": [
+      "product.detect",
+      "product.search",
+      "recommend"
+    ],
+    "meta": "Reference Scenario",
+    "status": "Planned Example",
+    "icon": "bag",
+    "color": "#d99148",
+    "url": ""
+  },
+  {
+    "section": "agents",
+    "category": "Speech",
+    "name": "Meeting Summary",
+    "en": "ASR · Speaker Diarization · Summary",
+    "desc": "A reference workflow combining speech transcription, speaker diarization and meeting summaries.",
+    "tags": [
+      "asr",
+      "diarization",
+      "summarize"
+    ],
+    "meta": "Reference Scenario",
+    "status": "Planned Example",
+    "icon": "video",
+    "color": "#83a663",
+    "url": ""
+  },
+  {
+    "section": "agents",
+    "category": "Tool Calling",
+    "name": "Agent Client Integration",
+    "en": "Agent Framework Integration",
+    "desc": "Connect an OpenAI-compatible Agent client and implement the tool execution loop. See endpoint, model ID and tool result configuration.",
+    "tags": [
+      "PicoClaw",
+      "DeepSeek Harness",
+      "LangChain"
+    ],
+    "meta": "Integration Guide",
+    "status": "Documentation",
+    "icon": "grid",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlogic-agent-server#connect-an-agent-application"
+  },
+  {
+    "section": "agents",
+    "category": "Speech",
+    "name": "Home Voice Assistant",
+    "en": "Speech Input · Conversation · Speech Output",
+    "desc": "A voice interaction reference combining ASR, LLM and TTS, with optional extensions for home device control.",
+    "tags": [
+      "asr",
+      "llm.chat",
+      "tts"
+    ],
+    "meta": "Reference Scenario",
+    "status": "Planned Example",
+    "icon": "mic",
+    "color": "#c6759e",
+    "url": ""
+  },
+  {
+    "section": "agents",
+    "category": "Vision",
+    "name": "OCR Translate",
+    "en": "Text Recognition · Translation",
+    "desc": "A reference workflow that extracts text from images and processes it with a language model.",
+    "tags": [
+      "ocr",
+      "translate",
+      "vision"
+    ],
+    "meta": "Reference Scenario",
+    "status": "Planned Example",
+    "icon": "book",
+    "color": "#4ca29b",
+    "url": ""
+  },
+  {
+    "section": "skills",
+    "category": "Vision",
+    "name": "Vision Skills",
+    "en": "Detection · Recognition · OCR",
+    "desc": "A resource placeholder for on-device detection, recognition and OCR skills, including integration instructions.",
+    "tags": [
+      "detection",
+      "recognition",
+      "ocr"
+    ],
+    "meta": "Skills Resource",
+    "status": "Coming Soon",
+    "icon": "eye",
+    "color": "#4884bd",
+    "url": ""
+  },
+  {
+    "section": "skills",
+    "category": "Audio",
+    "name": "Audio Skills",
+    "en": "ASR · TTS · Voice Processing",
+    "desc": "A resource placeholder for speech recognition, speech synthesis and speaker-related skills.",
+    "tags": [
+      "Whisper",
+      "SenseVoice",
+      "tts"
+    ],
+    "meta": "Skills Resource",
+    "status": "Coming Soon",
+    "icon": "mic",
+    "color": "#c6759e",
+    "url": ""
+  },
+  {
+    "section": "skills",
+    "category": "Tools",
+    "name": "MCP Tools",
+    "en": "External Tools · Custom Integration",
+    "desc": "A resource placeholder for MCP service setup, tool definitions and custom integration examples.",
+    "tags": [
+      "MCP",
+      "tools",
+      "integration"
+    ],
+    "meta": "Tool Integration",
+    "status": "Coming Soon",
+    "icon": "layers",
+    "color": "#8f7cbe",
+    "url": ""
+  },
+  {
+    "section": "sdk",
+    "category": "Toolchain",
+    "name": "Amlogic NN Toolkit",
+    "en": "Conversion · Quantization · Compilation · Inference",
+    "desc": "A full toolchain for model conversion, quantization, compilation and inference. See component documentation for installation and platform support.",
+    "tags": [
+      "Python",
+      "CNN",
+      "LLM",
+      "NPU"
+    ],
+    "meta": "GitHub Repository",
+    "status": "Repository",
+    "icon": "code",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-toolkit/blob/main/amlnn_toolkit/readme.md"
+  },
+  {
+    "section": "sdk",
+    "category": "Python SDK",
+    "name": "NN Edge Toolkit Lite",
+    "en": "Lightweight Python Inference SDK",
+    "desc": "A lightweight Python inference SDK for Debian boards, designed for CNN and other small-model workloads.",
+    "tags": [
+      "Python",
+      "Debian",
+      "CNN"
+    ],
+    "meta": "SDK Documentation",
+    "status": "Documentation",
+    "icon": "layers",
+    "color": "#4ca29b",
+    "url": "https://github.com/Amlogic-NN/amlnn-toolkit/blob/main/amlnn_toolkit_lite/amlnn_edge_toolkit_lite/readme.md"
+  },
+  {
+    "section": "sdk",
+    "category": "Python SDK",
+    "name": "LLM Edge Toolkit Lite",
+    "en": "On-device LLM Inference",
+    "desc": "A lightweight Python LLM inference SDK for Debian boards, with streaming output, multi-turn conversations, sampling controls and chat templates.",
+    "tags": [
+      "Python",
+      "LLM",
+      "ADLA"
+    ],
+    "meta": "SDK Documentation",
+    "status": "Documentation",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-toolkit/blob/main/amlnn_toolkit_lite/amlllm_edge_toolkit_lite/readme.md"
+  },
+  {
+    "section": "sdk",
+    "category": "Serving",
+    "name": "Amlogic Agent Server",
+    "en": "OpenAI Compatible API · Edge–Cloud Routing",
+    "desc": "OpenAI-compatible on-device LLM/VLM serving with streaming, tool calling, ASR and KV-cache reuse. Optional edge–cloud routing is experimental.",
+    "tags": [
+      "OpenAI API",
+      "ASR",
+      "Tool Calling",
+      "KV Cache"
+    ],
+    "meta": "Serving Resource",
+    "status": "Repository",
+    "icon": "layers",
+    "color": "#d99148",
+    "url": "https://github.com/Amlogic-NN/amlogic-agent-server"
+  },
+  {
+    "section": "models",
+    "category": "CNN",
+    "name": "Model Playground",
+    "en": "Computer Vision · Audio Models",
+    "desc": "A model conversion and deployment example collection spanning classification, detection, segmentation, pose, OCR, speech and LLM workflows.",
+    "tags": [
+      "Detection",
+      "Segmentation",
+      "Audio"
+    ],
+    "meta": "Model Resource",
+    "status": "Repository",
+    "icon": "database",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground"
+  },
+  {
+    "section": "models",
+    "category": "LLM / VLM",
+    "name": "LLM / VLM Models",
+    "en": "Language · Multimodal · ADLA",
+    "desc": "Python LLM inference examples. Check individual example documentation for supported models, platforms and usage.",
+    "tags": [
+      "LLM",
+      "VLM",
+      "ADLA"
+    ],
+    "meta": "Model Resource",
+    "status": "Example",
+    "icon": "database",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "models",
+    "category": "Model Platforms",
+    "name": "ADLA Models · Hugging Face",
+    "en": "Precompiled Models · Model Distribution",
+    "desc": "Browse the Amlogic ADLA model repository. Select model packages using your target platform and SDK documentation.",
+    "tags": [
+      "ADLA",
+      "Hugging Face",
+      "Model Downloads"
+    ],
+    "meta": "Hugging Face",
+    "status": "Model Repository",
+    "icon": "layers",
+    "color": "#4ca29b",
+    "url": "https://huggingface.co/Amlogic-NN/amlnn-adla-models"
+  },
+  {
+    "section": "start",
+    "category": "Setup",
+    "name": "NPU Quick Start · English",
+    "en": "Setup · Dependencies · Installation",
+    "desc": "The English Amlogic NPU Quick Start guide for development environment preparation and initial deployment.",
+    "tags": [
+      "Setup",
+      "Python",
+      "Debian"
+    ],
+    "meta": "Quick Start · English",
+    "status": "PDF Guide",
+    "icon": "book",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-toolkit/blob/main/doc/01_Amlogic_NPU_Quick_Start_guide_V0.1.pdf"
+  },
+  {
+    "section": "start",
+    "category": "Inference",
+    "name": "Run Your First Model",
+    "en": "Load Model · Run Inference",
+    "desc": "Learn model loading and Python inference calls with the lightweight on-device SDK documentation.",
+    "tags": [
+      "Quick Start",
+      "Inference",
+      "Python"
+    ],
+    "meta": "SDK Documentation",
+    "status": "Documentation",
+    "icon": "code",
+    "color": "#4ca29b",
+    "url": "https://github.com/Amlogic-NN/amlnn-toolkit/blob/main/amlnn_toolkit_lite/amlnn_edge_toolkit_lite/readme.md"
+  },
+  {
+    "section": "models",
+    "category": "Model Platforms",
+    "name": "ADLA Models · ModelScope",
+    "en": "ADLA Model Repository · ModelScope",
+    "desc": "Browse the Amlogic ADLA model repository on ModelScope. Agent Server documentation describes bootstrap-based model downloads.",
+    "url": "https://www.modelscope.cn/models/Amlogic/amlnn-adla-models",
+    "tags": [
+      "ADLA",
+      "ModelScope",
+      "Bootstrap"
+    ],
+    "icon": "database",
+    "meta": "ModelScope",
+    "status": "Model Repository",
+    "color": "#4884bd"
+  },
+  {
+    "section": "sdk",
+    "category": "C/C++ SDK",
+    "name": "NN Runtime · C/C++",
+    "en": "Native Neural Network Inference",
+    "desc": "Integrate native inference with libnnsdk.so and nnsdk2.h. Explore Android / Linux setup, build steps and base API examples.",
+    "url": "https://github.com/Amlogic-NN/amlnn-toolkit/blob/main/amlnn_runtime/nn_runtime/readme.md",
+    "tags": [
+      "C/C++",
+      "CNN",
+      "Android",
+      "Linux"
+    ],
+    "icon": "code",
+    "meta": "Developer Documentation",
+    "status": "Documentation",
+    "color": "#4884bd"
+  },
+  {
+    "section": "sdk",
+    "category": "C/C++ SDK",
+    "name": "LLM Runtime · C/C++",
+    "en": "Native LLM Inference",
+    "desc": "Integrate native LLM inference with libllmsdk.so and llmsdk.h. Explore streaming callbacks, multi-turn sessions and base API examples.",
+    "url": "https://github.com/Amlogic-NN/amlnn-toolkit/blob/main/amlnn_runtime/llm_runtime/readme.md",
+    "tags": [
+      "C/C++",
+      "LLM",
+      "Streaming"
+    ],
+    "icon": "code",
+    "meta": "Developer Documentation",
+    "status": "Documentation",
+    "color": "#4884bd"
+  },
+  {
+    "section": "start",
+    "category": "Setup",
+    "name": "NPU Quick Start · Chinese",
+    "en": "Amlogic NPU Quick Start · Chinese",
+    "desc": "The Chinese-language Amlogic NPU Quick Start guide for toolchain setup and on-device deployment.",
+    "url": "https://github.com/Amlogic-NN/amlnn-toolkit/blob/main/doc/01_Amlogic_NPU_Quick_Start_guide_CN_V0.1.pdf",
+    "tags": [
+      "Chinese",
+      "PDF",
+      "Quick Start"
+    ],
+    "icon": "book",
+    "meta": "Quick Start · Chinese",
+    "status": "PDF Guide",
+    "color": "#4884bd"
+  },
+  {
+    "section": "start",
+    "category": "Guides",
+    "name": "NPU User Guide · Chinese",
+    "en": "Amlogic NPU User Guide",
+    "desc": "The Chinese-language Amlogic NPU User Guide with detailed tool and deployment instructions.",
+    "url": "https://github.com/Amlogic-NN/amlnn-toolkit/blob/main/doc/02_Amlogic_NPU_User_Guide_CN_V0.1.pdf",
+    "tags": [
+      "Chinese",
+      "PDF",
+      "User Guide"
+    ],
+    "icon": "book",
+    "meta": "User Guide",
+    "status": "PDF Guide",
+    "color": "#4884bd"
+  },
+  {
+    "section": "start",
+    "category": "Agent",
+    "name": "Agent Server Deployment",
+    "en": "Installation · Bootstrap · Configuration",
+    "desc": "Install the server, download models, configure server.yaml and start the local service.",
+    "url": "https://github.com/Amlogic-NN/amlogic-agent-server#installation",
+    "tags": [
+      "Agent Server",
+      "Bootstrap",
+      "Configuration"
+    ],
+    "icon": "book",
+    "meta": "Developer Documentation",
+    "status": "Documentation",
+    "color": "#4884bd"
+  },
+  {
+    "section": "start",
+    "category": "Agent",
+    "name": "OpenAI API Examples",
+    "en": "Python · JavaScript · Streaming",
+    "desc": "Use OpenAI clients with the local service. Explore text generation, SSE streaming and tool-calling examples.",
+    "url": "https://github.com/Amlogic-NN/amlogic-agent-server#chat-completion-api-usage-examples",
+    "tags": [
+      "Python",
+      "JavaScript",
+      "SSE"
+    ],
+    "icon": "book",
+    "meta": "Developer Documentation",
+    "status": "Documentation",
+    "color": "#4884bd"
+  },
+  {
+    "section": "start",
+    "category": "Agent",
+    "name": "ASR API Guide",
+    "en": "Whisper · SenseVoice · Audio Transcription",
+    "desc": "Explore audio transcription endpoints, model configuration and request examples for Whisper and SenseVoice.",
+    "url": "https://github.com/Amlogic-NN/amlogic-agent-server#asr-interfaces",
+    "tags": [
+      "ASR",
+      "Whisper",
+      "SenseVoice"
+    ],
+    "icon": "mic",
+    "meta": "Developer Documentation",
+    "status": "Documentation",
+    "color": "#4884bd"
+  },
+  {
+    "section": "demos",
+    "category": "Benchmarks",
+    "name": "Performance & Accuracy",
+    "en": "Model Benchmarks · Accuracy",
+    "desc": "Explore Model Playground performance and accuracy data. Check the source page for test platforms and methodology.",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/blob/main/PERFORMANCE.md",
+    "tags": [
+      "Benchmark",
+      "FPS",
+      "Accuracy"
+    ],
+    "icon": "database",
+    "meta": "Developer Documentation",
+    "status": "Documentation",
+    "color": "#4884bd"
+  },
+  {
+    "section": "demos",
+    "category": "Guides",
+    "name": "Platform Build Guide",
+    "en": "Android · Linux · Cross Compilation",
+    "desc": "Configure cross-compilation toolchains and build Model Playground examples for your target platform.",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/blob/main/docs/Platform_compile_guide.md",
+    "tags": [
+      "Android",
+      "Linux",
+      "Toolchain"
+    ],
+    "icon": "book",
+    "meta": "Developer Documentation",
+    "status": "Documentation",
+    "color": "#4884bd"
+  },
+  {
+    "section": "demos",
+    "category": "Classification",
+    "name": "mobilenet_v2",
+    "en": "Classification · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/mobilenet/"
+  },
+  {
+    "section": "demos",
+    "category": "Classification",
+    "name": "resnet50-v2",
+    "en": "Classification · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/resnet/"
+  },
+  {
+    "section": "demos",
+    "category": "Classification",
+    "name": "DINO backbone + linear classifier",
+    "en": "Classification · W8A16",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/DINO/"
+  },
+  {
+    "section": "demos",
+    "category": "Audio",
+    "name": "YAMNet",
+    "en": "Audio Classification · W8A16",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "mic",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/yamnet/"
+  },
+  {
+    "section": "demos",
+    "category": "Detection",
+    "name": "DETR",
+    "en": "Object Detection · W16A16",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w16a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/DETR/"
+  },
+  {
+    "section": "demos",
+    "category": "Detection",
+    "name": "PP-YOLOE",
+    "en": "Object Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/ppyoloe/"
+  },
+  {
+    "section": "demos",
+    "category": "Detection",
+    "name": "QR code detection",
+    "en": "Object Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/qrcode/"
+  },
+  {
+    "section": "demos",
+    "category": "Detection",
+    "name": "YOLOv5",
+    "en": "Object Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/yolov5/"
+  },
+  {
+    "section": "demos",
+    "category": "Detection",
+    "name": "YOLOv6",
+    "en": "Object Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/yolov6/"
+  },
+  {
+    "section": "demos",
+    "category": "Detection",
+    "name": "YOLOv7",
+    "en": "Object Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/yolov7/"
+  },
+  {
+    "section": "demos",
+    "category": "Detection",
+    "name": "YOLOv8",
+    "en": "Object Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/yolov8/"
+  },
+  {
+    "section": "demos",
+    "category": "Detection",
+    "name": "YOLOv10",
+    "en": "Object Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/yolov10/"
+  },
+  {
+    "section": "demos",
+    "category": "Detection",
+    "name": "YOLO11",
+    "en": "Object Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/yolov11/"
+  },
+  {
+    "section": "demos",
+    "category": "Detection",
+    "name": "YOLOE",
+    "en": "Object Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/yoloe/"
+  },
+  {
+    "section": "demos",
+    "category": "Detection",
+    "name": "YOLO-World",
+    "en": "Object Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/yoloworld/"
+  },
+  {
+    "section": "demos",
+    "category": "Detection",
+    "name": "YOLOX",
+    "en": "Object Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/yolox/"
+  },
+  {
+    "section": "demos",
+    "category": "Detection",
+    "name": "RetinaFace",
+    "en": "Face Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/retinaface/"
+  },
+  {
+    "section": "demos",
+    "category": "Pose & Gesture",
+    "name": "Gesture",
+    "en": "Gesture Recognition · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/gesture/"
+  },
+  {
+    "section": "demos",
+    "category": "Segmentation",
+    "name": "DeepLabV3",
+    "en": "Image Segmentation · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/deeplabv3/"
+  },
+  {
+    "section": "demos",
+    "category": "Segmentation",
+    "name": "MobileSAM",
+    "en": "Image Segmentation · W8A16",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/mobilesam/"
+  },
+  {
+    "section": "demos",
+    "category": "Segmentation",
+    "name": "PP-LiteSeg",
+    "en": "Image Segmentation · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/ppseg/"
+  },
+  {
+    "section": "demos",
+    "category": "Segmentation",
+    "name": "YOLOv5 segmentation",
+    "en": "Instance Segmentation · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/yolov5-seg/"
+  },
+  {
+    "section": "demos",
+    "category": "Segmentation",
+    "name": "YOLOv8 segmentation",
+    "en": "Instance Segmentation · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/yolov8-seg/"
+  },
+  {
+    "section": "demos",
+    "category": "Detection",
+    "name": "YOLOv8 OBB",
+    "en": "Oriented Object Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/yolov8-obb/"
+  },
+  {
+    "section": "demos",
+    "category": "Pose & Gesture",
+    "name": "BlazePose detection",
+    "en": "Pose Estimation · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/blazepose_detect/"
+  },
+  {
+    "section": "demos",
+    "category": "Pose & Gesture",
+    "name": "BlazePose landmark",
+    "en": "Pose Estimation · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/blazepose_landmark/"
+  },
+  {
+    "section": "demos",
+    "category": "Pose & Gesture",
+    "name": "YOLOv8 pose",
+    "en": "Pose Estimation · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/yolov8-pose/"
+  },
+  {
+    "section": "demos",
+    "category": "License Plate Recognition",
+    "name": "LPRNet",
+    "en": "License Plate Recognition · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/lprnet/"
+  },
+  {
+    "section": "demos",
+    "category": "OCR",
+    "name": "PaddleOCR detection",
+    "en": "OCR Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/ppocr-det/"
+  },
+  {
+    "section": "demos",
+    "category": "OCR",
+    "name": "PaddleOCR detection v4",
+    "en": "OCR Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/ppocr_det_v4/"
+  },
+  {
+    "section": "demos",
+    "category": "OCR",
+    "name": "PaddleOCR detection v5",
+    "en": "OCR Detection · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/ppocrv5-det/"
+  },
+  {
+    "section": "demos",
+    "category": "OCR",
+    "name": "PaddleOCR recognition v4",
+    "en": "OCR Recognition · W8A16",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/ppocr_rec_v4/"
+  },
+  {
+    "section": "demos",
+    "category": "OCR",
+    "name": "PaddleOCR v4 detection + recognition",
+    "en": "OCR System · W8A16",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/ppocr_v4_system/"
+  },
+  {
+    "section": "demos",
+    "category": "OCR",
+    "name": "PP-OCRv5 system",
+    "en": "OCR System · W8A16",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/ppocrv5-system/"
+  },
+  {
+    "section": "demos",
+    "category": "OCR",
+    "name": "PP-OCRv6 system",
+    "en": "OCR System · W8A16",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/ppocrv6-system/"
+  },
+  {
+    "section": "demos",
+    "category": "Audio",
+    "name": "SenseVoice",
+    "en": "Speech Recognition · W8A16",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "mic",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/sensevoice/"
+  },
+  {
+    "section": "demos",
+    "category": "Audio",
+    "name": "Whisper Tiny",
+    "en": "Speech Recognition · W8A8",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311D2 / S905X5 / A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a8",
+      "A311D2",
+      "S905X5",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "mic",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/whisper/"
+  },
+  {
+    "section": "demos",
+    "category": "Image–Text",
+    "name": "CLIP",
+    "en": "Image-Text Matching · W8A16",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/clip/"
+  },
+  {
+    "section": "demos",
+    "category": "Image–Text",
+    "name": "MobileCLIP",
+    "en": "Image-Text Matching · W8A16",
+    "desc": "Explore model conversion, deployment and inference in the dedicated example directory. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w8a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · CNN",
+    "status": "Supported",
+    "icon": "layers",
+    "color": "#4884bd",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/mobileclip/"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "DeepSeek-R1-1.5B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Qwen-1.8B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Qwen1.5-0.5B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Qwen1.5-1.8B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Qwen2-0.5B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Qwen2-1.5B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Qwen2.5-0.5B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Qwen2.5-1.5B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Qwen2.5-3B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Qwen3-0.6B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Qwen3-1.7B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Qwen3-4B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "TinyLlama0.4-1.1B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "TinyLlama1-1.1B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Llama2-7B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Llama3.2-1B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Llama3.2-3B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "OpenLLaMA-3B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Gemma1-2B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Gemma2-2B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Gemma3-270M",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Gemma3-1B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Gemma4-E2B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Gemma4-E4B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Phi1.5-1.3B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Phi2-2.7B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "Phi3-3.8B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "ChatGLM3-6B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "MiniCPM3-4B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "LLM",
+    "name": "MiniCPM4-0.5B",
+    "en": "LLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · LLM",
+    "status": "Supported",
+    "icon": "code",
+    "color": "#8f7cbe",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "VLM",
+    "name": "InternVL2-1B",
+    "en": "VLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · VLM",
+    "status": "Supported",
+    "icon": "eye",
+    "color": "#4ca29b",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "VLM",
+    "name": "InternVL3-1B",
+    "en": "VLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · VLM",
+    "status": "Supported",
+    "icon": "eye",
+    "color": "#4ca29b",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "VLM",
+    "name": "Qwen-VL2-2B",
+    "en": "VLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · VLM",
+    "status": "Supported",
+    "icon": "eye",
+    "color": "#4ca29b",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "VLM",
+    "name": "Qwen-VL2.5-3B",
+    "en": "VLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · VLM",
+    "status": "Supported",
+    "icon": "eye",
+    "color": "#4ca29b",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "VLM",
+    "name": "Qwen-VL3-2B",
+    "en": "VLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · VLM",
+    "status": "Supported",
+    "icon": "eye",
+    "color": "#4ca29b",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "VLM",
+    "name": "Qwen-VL3-4B",
+    "en": "VLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · VLM",
+    "status": "Supported",
+    "icon": "eye",
+    "color": "#4ca29b",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "VLM",
+    "name": "MobileVLM-V2-1.7B",
+    "en": "VLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · VLM",
+    "status": "Supported",
+    "icon": "eye",
+    "color": "#4ca29b",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  },
+  {
+    "section": "demos",
+    "category": "VLM",
+    "name": "MiniCPM-V2.6-8B",
+    "en": "VLM · W4A16",
+    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "tags": [
+      "w4a16",
+      "A311Y3",
+      "C305X2",
+      "A123X"
+    ],
+    "meta": "Model Playground · VLM",
+    "status": "Supported",
+    "icon": "eye",
+    "color": "#4ca29b",
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+  }
+];
+const paths={grid:'M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z',layers:'m12 3 9 5-9 5-9-5z M3 12l9 5 9-5 M3 16l9 5 9-5',code:'m8 5-7 7 7 7 M16 5l7 7-7 7 M14 3l-4 18',database:'M4 6c0-4 16-4 16 0s-16 4-16 0z M4 6v12c0 4 16 4 16 0V6 M4 12c0 4 16 4 16 0',book:'M12 5v16 M12 5C9 2 4 3 2 4v15c4-2 7-1 10 2 3-3 6-4 10-2V4c-2-1-7-2-10 1z',bag:'M5 8h14l1 13H4z M9 8V5a3 3 0 0 1 6 0v3',video:'M3 5h12v14H3z M15 10l7-4v12l-7-4',mic:'M9 5a3 3 0 0 1 6 0v7a3 3 0 0 1-6 0z M5 10v2a7 7 0 0 0 14 0v-2 M12 19v3 M8 22h8',eye:'M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z M9 12a3 3 0 1 0 6 0 3 3 0 0 0-6 0'};
+const svg=k=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${paths[k]||paths.grid}"/></svg>`;
+const escapeText=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeURL=s=>{try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}};
+let section='agents',category='All';
+const nav=document.getElementById('nav'),filters=document.getElementById('filters'),grid=document.getElementById('grid'),search=document.getElementById('search');
+function renderNav(){nav.innerHTML=SECTIONS.map(s=>`<button data-section="${s.id}" class="${s.id===section?'active':''}" aria-pressed="${s.id===section}">${svg(s.icon)}${s.name}</button>`).join('')}
+function renderFilters(){const cats=['All',...new Set(RESOURCES.filter(r=>r.section===section).map(r=>r.category))];filters.replaceChildren(...cats.map(c=>{const b=document.createElement('button');b.textContent=c;b.className=c===category?'active':'';b.setAttribute('aria-pressed',String(c===category));b.onclick=()=>{category=c;renderFilters();renderCards()};return b}))}
+function renderCards(){const q=search.value.trim().toLowerCase();const list=RESOURCES.filter(r=>r.section===section&&(category==='All'||r.category===category)&&[r.name,r.en,r.desc,r.meta,...r.tags].join(' ').toLowerCase().includes(q));document.getElementById('count').textContent=`${list.length} resources`;grid.innerHTML=list.length?list.map(r=>{const url=safeURL(r.url);return `<article class="card"><div class="card-top"><span class="icon" style="background:${/^#[0-9a-f]{6}$/i.test(r.color)?r.color:'#4884bd'}">${svg(r.icon)}</span><span class="status ${url?'ready':''}">${escapeText(r.status)}</span></div><h3>${escapeText(r.name)}</h3><div class="english">${escapeText(r.en)}</div><p class="desc">${escapeText(r.desc)}</p><div class="tags">${r.tags.map(t=>`<span class="tag">${escapeText(t)}</span>`).join('')}</div><div class="card-bottom"><span class="meta">${escapeText(r.meta)}</span>${url?`<a class="link" href="${escapeText(url)}" target="_blank" rel="noopener noreferrer" aria-label="Explore ${escapeText(r.name)}">Explore ↗</a>`:'<span class="link pending">Coming Soon</span>'}</div></article>`}).join(''):'<div class="empty">No matching resources. Try another keyword or category.</div>'}
+function selectSection(id){section=id;category='All';const s=SECTIONS.find(x=>x.id===id);document.getElementById('title').textContent=s.name;document.getElementById('subtitle').textContent=s.desc;renderNav();renderFilters();renderCards()}
+nav.addEventListener('click',e=>{const b=e.target.closest('[data-section]');if(b)selectSection(b.dataset.section)});search.addEventListener('input',renderCards);const guide=document.getElementById('guide');document.getElementById('help').onclick=()=>guide.showModal();document.getElementById('close').onclick=()=>guide.close();selectSection(section);
+</script>
+</body></html>
