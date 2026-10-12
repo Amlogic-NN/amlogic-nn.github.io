@@ -8,6 +8,7 @@
 :root{--blue:#073c99;--ink:#15243b;--muted:#728095;--line:#e3eaf3;--bg:#f5f8fc}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}button,input,a{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}button{cursor:pointer}a{text-decoration:none;color:inherit}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #63a4ff;outline-offset:3px}.shell{display:grid;grid-template-columns:236px minmax(0,1fr);min-height:100vh}aside{position:sticky;top:0;height:100vh;padding:30px 20px;background:#fff;border-right:1px solid var(--line);display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:12px;margin:0 8px 35px}.logo{display:grid;place-items:center;background:var(--blue);color:#fff;width:44px;height:44px;border-radius:13px;font-size:25px;font-weight:750}.brand strong{display:block;font-size:17px;line-height:1.25}.brand small{color:var(--muted);font-size:11px}.nav{display:grid;gap:8px}.nav button{border:0;background:none;color:#627088;text-align:left;padding:13px 16px;border-radius:9px;display:flex;align-items:center;gap:12px;font-weight:600}.nav button.active{color:var(--blue);background:#eaf1fc}.nav button:hover{background:#f0f5fb}.nav svg{width:19px;height:19px;flex-shrink:0}.aside-foot{margin-top:auto;padding:20px 10px 0;border-top:1px solid var(--line);color:var(--muted);font-size:11px}.aside-foot a{display:block;color:var(--blue);margin-top:8px}main{padding:34px 38px;max-width:1600px;width:100%;margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:26px}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--blue);font-weight:750}h1{margin:5px 0;font-size:27px;letter-spacing:-.6px}.subtitle{color:var(--muted);margin:0}.top-actions{display:flex;gap:12px;align-items:center}.search{background:#fff;border:1px solid var(--line);border-radius:9px;padding:10px 12px;display:flex;align-items:center;gap:8px}.search input{border:0;background:transparent;width:200px;outline:none;color:var(--ink)}.primary{display:inline-flex;align-items:center;justify-content:center;background:var(--blue);color:#fff;border:0;border-radius:9px;padding:11px 17px;font-weight:600;white-space:nowrap}.banner{border:1px solid #dbe7fa;background:linear-gradient(105deg,#eaf2ff,#f9fbff);border-radius:14px;padding:24px 28px;margin-bottom:25px;display:flex;align-items:center;justify-content:space-between;gap:20px}.banner h2{margin:0 0 5px;font-size:20px}.banner p{margin:0;color:#62738d}.banner-label{border:1px solid #cedcf2;background:#fff;border-radius:30px;padding:8px 15px;color:var(--blue);white-space:nowrap;font-size:12px}.toolbar{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:20px}.filters{display:flex;gap:8px;flex-wrap:wrap}.filters button{border:1px solid var(--line);background:#fff;color:#647086;border-radius:20px;padding:6px 15px}.filters button.active{background:#e8f0fe;border-color:#c3d5f3;color:var(--blue);font-weight:650}.count{font-size:12px;color:var(--muted);white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:23px;min-height:290px;display:flex;flex-direction:column;box-shadow:0 3px 12px #183b6510;transition:transform .18s,box-shadow .18s}.card:hover{transform:translateY(-3px);box-shadow:0 8px 22px #183b6515}.card-top{display:flex;align-items:start;justify-content:space-between;gap:10px}.icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;color:#fff}.icon svg{width:25px;height:25px}.status{font-size:11px;border-radius:5px;padding:3px 8px;background:#f0f3f7;color:#79869a}.status.ready{background:#eaf3fe;color:#23589c}.card h3{margin:16px 0 3px;font-size:19px}.english{font-size:12px;color:#8b96a7}.desc{font-size:13px;line-height:1.8;margin:12px 0 17px;color:#5c697b}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}.tag{background:#f0f5fc;border:1px solid #e0e8f4;border-radius:5px;color:#527099;font-size:11px;padding:2px 7px}.card-bottom{margin-top:auto;padding-top:15px;border-top:1px solid #edf1f7;display:flex;justify-content:space-between;align-items:center;gap:10px}.meta{font-size:11px;color:#8490a2}.link{color:var(--blue);background:#eaf1fc;border:1px solid #d3dff2;border-radius:7px;padding:6px 12px;font-size:12px;font-weight:650}.pending{color:#909aad;background:#f5f7fa;border-color:#e9edf3;cursor:default}footer{margin-top:30px;display:flex;justify-content:space-between;gap:15px;color:#8994a5;font-size:11px}footer button{border:0;background:none;color:var(--blue);padding:0}.empty{grid-column:1/-1;text-align:center;background:white;padding:60px;border:1px dashed var(--line);border-radius:14px;color:var(--muted)}dialog{max-width:640px;width:calc(100% - 40px);border:1px solid var(--line);border-radius:16px;padding:28px;color:var(--ink)}dialog::backdrop{background:#15243b66}dialog h2{margin-top:0}dialog code{background:#edf2fa;padding:2px 5px;border-radius:4px}dialog li{margin:10px 0}@media(min-width:1500px){.card{min-height:310px}}@media(max-width:1150px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.top{align-items:start;flex-direction:column}.top-actions{width:100%}.search{flex:1}.search input{width:100%}}@media(max-width:720px){.shell{grid-template-columns:1fr}aside{height:auto;position:static;padding:18px;border-right:0;border-bottom:1px solid var(--line)}.brand{margin:0 0 18px}.nav{display:flex;overflow:auto;gap:6px}.nav button{white-space:nowrap;padding:9px 12px}.nav svg,.aside-foot{display:none}main{padding:24px 18px}.grid{grid-template-columns:1fr}.banner{padding:20px}.banner-label{display:none}.toolbar{align-items:start}.count{padding-top:6px}.top-actions{flex-wrap:wrap}.search{min-width:180px}h1{font-size:24px}.card{min-height:270px}footer{flex-wrap:wrap}}@media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
 /* Technology theme */
 aside{background:linear-gradient(170deg,#0b2451,#07172f);color:#fff;border:0}.logo{background:linear-gradient(135deg,#2968e2,#13aed5);box-shadow:0 0 25px #1886ee30;border:1px solid #71caff66}.brand small{color:#83a0c8}.nav button{color:#a1b6d3}.nav button.active{background:#1d4985;color:#fff;border:1px solid #5c9bed55;box-shadow:inset 3px 0 #63d6ff}.nav button:hover{background:#173660}.aside-foot{border-color:#304360;color:#7c99bd}.aside-foot a{color:#83ccff}.banner{position:relative;overflow:hidden;background:linear-gradient(110deg,#092d67,#0c4c93);border:1px solid #2860a0;min-height:170px;color:white;box-shadow:0 8px 22px #124d9220}.banner:before{content:'';position:absolute;inset:0;background-image:linear-gradient(#84b9f00e 1px,transparent 1px),linear-gradient(90deg,#84b9f00e 1px,transparent 1px);background-size:24px 24px;pointer-events:none}.banner>div{position:relative}.banner h2{font-size:29px;letter-spacing:-.6px}.banner p{color:#b8d4f6;max-width:510px}.chip-art{width:230px;height:130px;flex-shrink:0;filter:drop-shadow(0 0 8px #49baff66)}.chip-art svg{width:100%;height:100%}.card{border-top:3px solid #ccdcf1;box-shadow:0 4px 15px #14335f08}.card:hover{border-top-color:#2991d6;box-shadow:0 12px 26px #14335f15}.icon{box-shadow:0 4px 10px #12407315;background-image:linear-gradient(135deg,#ffffff15,#06194120)!important}.primary{background:linear-gradient(120deg,#10468f,#0862ba);box-shadow:0 4px 10px #125ab51c}.tag{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:10px}.eyebrow{letter-spacing:2.4px}.link:hover{background:#d9e9ff}.pending{font-size:11px}.search svg{display:block}.banner-label{display:none}@media(max-width:900px){.chip-art{width:150px}}@media(max-width:720px){.chip-art{display:none}.banner h2{font-size:25px}.nav button.active{box-shadow:inset 0 -2px #63d6ff}.banner{min-height:150px}}
+[hidden]{display:none!important}.perf-head{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:24px}.perf-head h2{font-size:30px;letter-spacing:-1px;margin:6px 0}.perf-head p{color:var(--muted);margin:0}.perf-tabs{display:flex;flex-wrap:wrap;gap:7px;border-bottom:1px solid var(--line);padding-bottom:16px}.perf-tabs button{border:1px solid var(--line);border-radius:8px;background:#fff;color:#65748d;padding:10px 15px}.perf-tabs button.active{background:#123f80;color:white;border-color:#123f80}.perf-controls{display:flex;gap:20px;align-items:end;flex-wrap:wrap;margin:22px 0}.perf-controls label{display:grid;gap:6px;font-size:11px;color:#6e7f95;text-transform:uppercase;letter-spacing:.8px}select{padding:10px 13px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font:13px system-ui;min-height:42px}.perf-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.perf-stats>div{padding:22px;background:white;border:1px solid var(--line);border-top:3px solid #2c86c9;border-radius:12px;display:grid;gap:6px}.perf-stats small{color:#738198}.perf-stats strong{font-size:27px;letter-spacing:-.6px;color:#124480}.perf-stats span{font-size:11px;color:#8390a2}.perf-note{background:#eaf2fc;border-left:3px solid #3188c7;padding:14px 18px;color:#4e6480;font-size:12px;margin:22px 0}.perf-panel{padding:24px;background:white;border:1px solid var(--line);border-radius:14px;margin:20px 0}.panel-title{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:16px}.panel-title h3{margin:0;font-size:16px}.panel-title span{font-size:11px;color:#8490a2}.legend{display:flex;gap:20px;margin-bottom:18px;flex-wrap:wrap}.legend span{font-size:11px;color:#687991}.legend i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px}.chart-scroll{max-height:650px;overflow:auto}.chart-scroll svg{width:100%;min-width:750px;display:block}.table-scroll{overflow:auto;max-height:570px}table{border-collapse:collapse;width:100%;font-size:12px;text-align:left}th{position:sticky;top:0;background:#f0f5fb;z-index:1}th button{border:0;background:none;color:#47607e;padding:13px 12px;white-space:nowrap;font-weight:650}td{padding:12px;border-bottom:1px solid #eaf0f7;min-width:85px}td:first-child{font-weight:600;min-width:180px}tbody tr:hover{background:#f5f9ff}.table-scroll td{font-variant-numeric:tabular-nums}@media(max-width:720px){.perf-stats{grid-template-columns:1fr}.perf-head,.panel-title{align-items:start;flex-direction:column}.perf-panel{padding:16px}.perf-tabs button{padding:8px 10px;font-size:12px}}
 </style>
 </head>
 <body>
@@ -15,11 +16,12 @@ aside{background:linear-gradient(170deg,#0b2451,#07172f);color:#fff;border:0}.lo
 <main><header class="top"><div><div class="eyebrow">BUILD AI AT THE EDGE</div><h1 id="title">Agent Examples</h1><p class="subtitle" id="subtitle"></p></div><div class="top-actions"><label class="search"><span aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg></span><input id="search" type="search" aria-label="Search resources" placeholder="Search resources, capabilities, tags…"></label><a class="primary" href="https://github.com/Amlogic-NN" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></header>
 <section class="banner"><div><h2>Intelligence at the edge.</h2><p>Build with on-device models, open APIs and an extensible AI ecosystem.</p></div><div class="chip-art" aria-hidden="true"><svg viewBox="0 0 230 130" fill="none"><g stroke="#55c8ff" stroke-width="1.3"><path d="M0 25h65l20 20h30 M0 105h65l20-20h30 M230 25h-45l-20 20h-35 M230 105h-45l-20-20h-35 M115 0v30 M115 100v30 M150 0v30 M150 100v30"/><rect x="85" y="30" width="80" height="70" rx="12"/><rect x="93" y="38" width="64" height="54" rx="8"/><circle cx="35" cy="25" r="3"/><circle cx="195" cy="105" r="3"/></g><text x="125" y="61" text-anchor="middle" fill="white" font-size="17" font-weight="700">NPU</text><text x="125" y="78" text-anchor="middle" fill="#7dd3fc" font-size="9" letter-spacing="2">AMLOGIC</text></svg></div></section>
 <div class="toolbar"><div class="filters" id="filters" aria-label="Resource categories"></div><span class="count" id="count" aria-live="polite"></span></div><section class="grid" id="grid" aria-label="Resource list"></section>
-<footer><span>Amlogic AI Developer Portal · Community & Resources</span><button id="help">Publish & Customize</button></footer></main></div>
+<section id="performance" hidden aria-label="Performance benchmark dashboard"></section><footer><span>Amlogic AI Developer Portal · Community & Resources</span><button id="help">Publish & Customize</button></footer></main></div>
 <dialog id="guide"><h2>Publish & Customize</h2><ol><li>Upload this file as <code>index.html</code> to the root of your <code>amlogic-nn.github.io</code> repository.</li><li>Open Settings → Pages. Select Deploy from a branch, main, and /(root). Save.</li><li>Visit <code>https://amlogic-nn.github.io/</code> after deployment completes.</li><li>Edit the <code>RESOURCES</code> array to update names, descriptions, tags, release status and URLs.</li><li>Cards without a URL show “Coming Soon”. Check each resource against its project documentation before publishing.</li></ol><p>Reference scenario cards describe possible application workflows. They do not imply released projects or one-click deployment.</p><button class="primary" id="close">Got it</button></dialog>
 <script>
 /* CONTENT CONFIGURATION: edit SECTIONS and RESOURCES to maintain this portal. Empty URLs display Coming Soon. */
 const SECTIONS=[
+{"id":"performance","name":"Performance","icon":"chart","desc":"Explore model throughput, latency, memory and accuracy benchmarks."},
   {
     "id": "agents",
     "name": "Agent Examples",
@@ -1980,7 +1982,7 @@ const RESOURCES=[
     "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
   }
 ];
-const paths={grid:'M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z',layers:'m12 3 9 5-9 5-9-5z M3 12l9 5 9-5 M3 16l9 5 9-5',code:'m8 5-7 7 7 7 M16 5l7 7-7 7 M14 3l-4 18',database:'M4 6c0-4 16-4 16 0s-16 4-16 0z M4 6v12c0 4 16 4 16 0V6 M4 12c0 4 16 4 16 0',book:'M12 5v16 M12 5C9 2 4 3 2 4v15c4-2 7-1 10 2 3-3 6-4 10-2V4c-2-1-7-2-10 1z',bag:'M5 8h14l1 13H4z M9 8V5a3 3 0 0 1 6 0v3',video:'M3 5h12v14H3z M15 10l7-4v12l-7-4',mic:'M9 5a3 3 0 0 1 6 0v7a3 3 0 0 1-6 0z M5 10v2a7 7 0 0 0 14 0v-2 M12 19v3 M8 22h8',eye:'M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z M9 12a3 3 0 1 0 6 0 3 3 0 0 0-6 0'};
+const paths={chart:'M3 3v18h18 M7 16V9 M12 16V5 M17 16v-5',grid:'M3 3h7v7H3z M14 3h7v7h-7z M3 14h7v7H3z M14 14h7v7h-7z',layers:'m12 3 9 5-9 5-9-5z M3 12l9 5 9-5 M3 16l9 5 9-5',code:'m8 5-7 7 7 7 M16 5l7 7-7 7 M14 3l-4 18',database:'M4 6c0-4 16-4 16 0s-16 4-16 0z M4 6v12c0 4 16 4 16 0V6 M4 12c0 4 16 4 16 0',book:'M12 5v16 M12 5C9 2 4 3 2 4v15c4-2 7-1 10 2 3-3 6-4 10-2V4c-2-1-7-2-10 1z',bag:'M5 8h14l1 13H4z M9 8V5a3 3 0 0 1 6 0v3',video:'M3 5h12v14H3z M15 10l7-4v12l-7-4',mic:'M9 5a3 3 0 0 1 6 0v7a3 3 0 0 1-6 0z M5 10v2a7 7 0 0 0 14 0v-2 M12 19v3 M8 22h8',eye:'M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z M9 12a3 3 0 1 0 6 0 3 3 0 0 0-6 0'};
 const svg=k=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${paths[k]||paths.grid}"/></svg>`;
 const escapeText=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeURL=s=>{try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}};
@@ -1990,6 +1992,1500 @@ function renderNav(){nav.innerHTML=SECTIONS.map(s=>`<button data-section="${s.id
 function renderFilters(){const cats=['All',...new Set(RESOURCES.filter(r=>r.section===section).map(r=>r.category))];filters.replaceChildren(...cats.map(c=>{const b=document.createElement('button');b.textContent=c;b.className=c===category?'active':'';b.setAttribute('aria-pressed',String(c===category));b.onclick=()=>{category=c;renderFilters();renderCards()};return b}))}
 function renderCards(){const q=search.value.trim().toLowerCase();const list=RESOURCES.filter(r=>r.section===section&&(category==='All'||r.category===category)&&[r.name,r.en,r.desc,r.meta,...r.tags].join(' ').toLowerCase().includes(q));document.getElementById('count').textContent=`${list.length} resources`;grid.innerHTML=list.length?list.map(r=>{const url=safeURL(r.url);return `<article class="card"><div class="card-top"><span class="icon" style="background:${/^#[0-9a-f]{6}$/i.test(r.color)?r.color:'#4884bd'}">${svg(r.icon)}</span><span class="status ${url?'ready':''}">${escapeText(r.status)}</span></div><h3>${escapeText(r.name)}</h3><div class="english">${escapeText(r.en)}</div><p class="desc">${escapeText(r.desc)}</p><div class="tags">${r.tags.map(t=>`<span class="tag">${escapeText(t)}</span>`).join('')}</div><div class="card-bottom"><span class="meta">${escapeText(r.meta)}</span>${url?`<a class="link" href="${escapeText(url)}" target="_blank" rel="noopener noreferrer" aria-label="Explore ${escapeText(r.name)}">Explore ↗</a>`:'<span class="link pending">Coming Soon</span>'}</div></article>`}).join(''):'<div class="empty">No matching resources. Try another keyword or category.</div>'}
 function selectSection(id){section=id;category='All';const s=SECTIONS.find(x=>x.id===id);document.getElementById('title').textContent=s.name;document.getElementById('subtitle').textContent=s.desc;renderNav();renderFilters();renderCards()}
-nav.addEventListener('click',e=>{const b=e.target.closest('[data-section]');if(b)selectSection(b.dataset.section)});search.addEventListener('input',renderCards);const guide=document.getElementById('guide');document.getElementById('help').onclick=()=>guide.showModal();document.getElementById('close').onclick=()=>guide.close();selectSection(section);
+nav.addEventListener('click',e=>{const b=e.target.closest('[data-section]');if(b)selectSection(b.dataset.section)});search.addEventListener('input',renderCards);const guide=document.getElementById('guide');document.getElementById('help').onclick=()=>guide.showModal();document.getElementById('close').onclick=()=>guide.close();const PERF_DATA={
+  "cnn": [
+    {
+      "name": "mobilenet_v2",
+      "example": "mobilenet",
+      "shape": "[1, 3, 224, 224]",
+      "dtype": "w8a8",
+      "S905X5": 1047.54,
+      "A311D2": 798.94,
+      "A311Y3": 1014.2
+    },
+    {
+      "name": "renet50_v2",
+      "example": "resnet",
+      "shape": "[1, 3, 224, 224]",
+      "dtype": "w8a8",
+      "S905X5": 127.49,
+      "A311D2": 136.65,
+      "A311Y3": 266.88
+    },
+    {
+      "name": "yolov8n",
+      "example": "yolov8",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "S905X5": 101.72,
+      "A311D2": 95.14,
+      "A311Y3": 191.06
+    },
+    {
+      "name": "yolov8s",
+      "example": "yolov8",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "S905X5": 42.33,
+      "A311D2": 42.77,
+      "A311Y3": 83.08
+    },
+    {
+      "name": "yolov8m",
+      "example": "yolov8",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "S905X5": 19.67,
+      "A311D2": 19.82,
+      "A311Y3": 35.3
+    },
+    {
+      "name": "yolov8l",
+      "example": "yolov8",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "S905X5": 10.53,
+      "A311D2": 10.12,
+      "A311Y3": 18.37
+    },
+    {
+      "name": "yolov11n",
+      "example": "yolov11",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "S905X5": 41.14,
+      "A311D2": 41.48,
+      "A311Y3": 62.24
+    },
+    {
+      "name": "yoloworld(v8m)",
+      "example": "yoloworld",
+      "shape": "[1, 3, 480, 640]",
+      "dtype": "w8a8",
+      "S905X5": 19.38,
+      "A311D2": 19.04,
+      "A311Y3": 35.3
+    },
+    {
+      "name": "yoloe",
+      "example": "yoloe",
+      "shape": "[1, 3, 288, 512]",
+      "dtype": "w8a8",
+      "S905X5": 53.9,
+      "A311D2": 37.8,
+      "A311Y3": 59.03
+    },
+    {
+      "name": "yolox_tiny",
+      "example": "yolox",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "S905X5": 42.9,
+      "A311D2": 35.89,
+      "A311Y3": 56.51
+    },
+    {
+      "name": "yolox_s",
+      "example": "yolox",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "S905X5": 35.12,
+      "A311D2": 33.31,
+      "A311Y3": 47.91
+    },
+    {
+      "name": "yolox_m",
+      "example": "yolox",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "S905X5": 18.55,
+      "A311D2": 17.98,
+      "A311Y3": 27.54
+    },
+    {
+      "name": "retinaface",
+      "example": "retinaface",
+      "shape": "[1, 3, 320, 320]",
+      "dtype": "w8a8",
+      "S905X5": 341.99,
+      "A311D2": 305.89,
+      "A311Y3": 269.18
+    },
+    {
+      "name": "paddleocrv4-det",
+      "example": "ppocr-det",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "S905X5": 37.66,
+      "A311D2": 38.85,
+      "A311Y3": 99.8
+    },
+    {
+      "name": "blazepose_detection",
+      "example": "blazepose_detect",
+      "shape": "[1, 3, 224, 224]",
+      "dtype": "w8a8",
+      "S905X5": 476.29,
+      "A311D2": 461.74,
+      "A311Y3": 572.74
+    },
+    {
+      "name": "blazepose_landmark_full",
+      "example": "blazepose_landmark",
+      "shape": "[1, 3, 256, 256]",
+      "dtype": "w8a8",
+      "S905X5": 84.59,
+      "A311D2": 70.31,
+      "A311Y3": 328.41
+    },
+    {
+      "name": "encoder_tiny_en",
+      "example": "whisper",
+      "shape": "[1, 80, 3000]",
+      "dtype": "w8a16(hybrid)",
+      "S905X5": 0.71,
+      "A311D2": 0.58,
+      "A311Y3": 8.75
+    },
+    {
+      "name": "decoder_tiny_en",
+      "example": "whisper",
+      "shape": "[1, 1500, 384]&[1, 48]",
+      "dtype": "w8a16(hybrid)",
+      "S905X5": 10.35,
+      "A311D2": 9.22,
+      "A311Y3": 51.55
+    },
+    {
+      "name": "clip-vit-base-patch32",
+      "example": "clip",
+      "shape": "[1, 3, 224, 224]",
+      "dtype": "w8a16(hybrid)",
+      "S905X5": 7.48,
+      "A311D2": 6.82,
+      "A311Y3": 73
+    }
+  ],
+  "llm": [
+    {
+      "name": "DeepSeek R1 · 1.5B",
+      "family": "DeepSeek",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 105.36,
+      "speed": 22.74,
+      "memory": 1268.62
+    },
+    {
+      "name": "Qwen 1 · 1.8B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 128.85,
+      "speed": 20.23,
+      "memory": 1634.78
+    },
+    {
+      "name": "Qwen 1.5 · 0.5B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 39.63,
+      "speed": 59.27,
+      "memory": 644.6
+    },
+    {
+      "name": "Qwen 1.5 · 1.8B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 120.08,
+      "speed": 21.53,
+      "memory": 1575.23
+    },
+    {
+      "name": "Qwen 2 · 0.5B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 44.42,
+      "speed": 63.58,
+      "memory": 402.92
+    },
+    {
+      "name": "Qwen 2 · 1.5B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 112.97,
+      "speed": 22.85,
+      "memory": 1075.24
+    },
+    {
+      "name": "Qwen 2.5 · 0.5B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 44.25,
+      "speed": 63.46,
+      "memory": 475.95
+    },
+    {
+      "name": "Qwen 2.5 · 1.5B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 117.15,
+      "speed": 22.77,
+      "memory": 1075.24
+    },
+    {
+      "name": "Qwen 2.5 · 3B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 211.18,
+      "speed": 11.92,
+      "memory": 2021.83
+    },
+    {
+      "name": "Qwen 3 · 0.6B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 56.68,
+      "speed": 47.87,
+      "memory": 779.52
+    },
+    {
+      "name": "Qwen 3 · 1.7B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 133.43,
+      "speed": 20.06,
+      "memory": 1541.24
+    },
+    {
+      "name": "Qwen 3 · 4B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 278.05,
+      "speed": 9.01,
+      "memory": 2842.98
+    },
+    {
+      "name": "Qwen 3 · 4B(Instruct)",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 278,
+      "speed": 8.99,
+      "memory": 2842.98
+    },
+    {
+      "name": "TinyLlama 0.4 · 1.1B",
+      "family": "TinyLlama",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 76.72,
+      "speed": 34.63,
+      "memory": 772.15
+    },
+    {
+      "name": "TinyLlama 1 · 1.1B",
+      "family": "TinyLlama",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 76.74,
+      "speed": 34.52,
+      "memory": 772.06
+    },
+    {
+      "name": "Llama 2 · 7B",
+      "family": "Llama",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 464.92,
+      "speed": 5.43,
+      "memory": 5217.7
+    },
+    {
+      "name": "Llama 3.2 · 1B",
+      "family": "Llama",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 94.92,
+      "speed": 27.44,
+      "memory": 953.43
+    },
+    {
+      "name": "Llama 3.2 · 3B",
+      "family": "Llama",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 260.89,
+      "speed": 11.21,
+      "memory": 2347.69
+    },
+    {
+      "name": "OpenLLaMA 1 · 3B",
+      "family": "OpenLLaMA",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 419.46,
+      "speed": 9.73,
+      "memory": 2864.93
+    },
+    {
+      "name": "Gemma 1 · 2B",
+      "family": "Gemma",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 147.42,
+      "speed": 14.08,
+      "memory": 1836.43
+    },
+    {
+      "name": "Gemma 2 · 2B",
+      "family": "Gemma",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 177.11,
+      "speed": 12.87,
+      "memory": 2130.33
+    },
+    {
+      "name": "Gemma 3 · 270M",
+      "family": "Gemma",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 51.28,
+      "speed": 86.43,
+      "memory": 655.8
+    },
+    {
+      "name": "Gemma 3 · 1B",
+      "family": "Gemma",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 98.01,
+      "speed": 30.62,
+      "memory": 1146.57
+    },
+    {
+      "name": "Gemma 4 · E2B",
+      "family": "Gemma",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 207.31,
+      "speed": 16.64,
+      "memory": 3542.01
+    },
+    {
+      "name": "Gemma 4 · E4B",
+      "family": "Gemma",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 345.42,
+      "speed": 8.38,
+      "memory": 5776.59
+    },
+    {
+      "name": "Phi 1.5 · 1.3B",
+      "family": "Phi",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 136.51,
+      "speed": 23.86,
+      "memory": 1404.81
+    },
+    {
+      "name": "Phi 2 · 2.7B",
+      "family": "Phi",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 309.98,
+      "speed": 11.76,
+      "memory": 2605.29
+    },
+    {
+      "name": "Phi 3 · 3.8B",
+      "family": "Phi",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 388.14,
+      "speed": 8.66,
+      "memory": 3400.62
+    },
+    {
+      "name": "ChatGLM3 3 · 6B",
+      "family": "ChatGLM3",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 349.79,
+      "speed": 6.15,
+      "memory": 4048.54
+    },
+    {
+      "name": "MiniCPM 3 · 4B",
+      "family": "MiniCPM",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 468.89,
+      "speed": 7.52,
+      "memory": 4434.37
+    },
+    {
+      "name": "MiniCPM 4 · 0.5B",
+      "family": "MiniCPM",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 53.29,
+      "speed": 72.92,
+      "memory": 395.23
+    },
+    {
+      "name": "InternVL 2 · 1B",
+      "family": "InternVL",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 229.68,
+      "speed": 12.55,
+      "memory": 526.52
+    },
+    {
+      "name": "InternVL 3 · 1B",
+      "family": "InternVL",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 109.94,
+      "speed": 12.45,
+      "memory": 526.53
+    },
+    {
+      "name": "Qwen-VL 2 · 2B",
+      "family": "Qwen-VL",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 113.12,
+      "speed": 22.9,
+      "memory": 1315.36
+    },
+    {
+      "name": "Qwen-VL 2.5 · 3B",
+      "family": "Qwen-VL",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 213.7,
+      "speed": 11.91,
+      "memory": 2345.54
+    },
+    {
+      "name": "Qwen-VL 3 · 2B",
+      "family": "Qwen-VL",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 169.16,
+      "speed": 16.36,
+      "memory": 1704.13
+    },
+    {
+      "name": "Qwen-VL 3 · 4B",
+      "family": "Qwen-VL",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 349.16,
+      "speed": 7.82,
+      "memory": 3259.33
+    },
+    {
+      "name": "MobileVLM 2 · 1.7B",
+      "family": "MobileVLM",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 138.64,
+      "speed": 15.12,
+      "memory": 1331.29
+    },
+    {
+      "name": "MiniCPM-V 2.6 · 8B",
+      "family": "MiniCPM-V",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 64,
+      "context": 320,
+      "tokens": 256,
+      "ttft": 604.17,
+      "speed": 2.12,
+      "memory": 4877.57
+    },
+    {
+      "name": "DeepSeek R1 · 1.5B",
+      "family": "DeepSeek",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 209.58,
+      "speed": 20.02,
+      "memory": 1268.62
+    },
+    {
+      "name": "Qwen 1 · 1.8B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 257.67,
+      "speed": 15.17,
+      "memory": 1634.78
+    },
+    {
+      "name": "Qwen 1.5 · 0.5B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 77.94,
+      "speed": 36.97,
+      "memory": 644.6
+    },
+    {
+      "name": "Qwen 1.5 · 1.8B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 239.31,
+      "speed": 15.88,
+      "memory": 1575.23
+    },
+    {
+      "name": "Qwen 2 · 0.5B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 88.59,
+      "speed": 49.92,
+      "memory": 402.92
+    },
+    {
+      "name": "Qwen 2 · 1.5B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 226.38,
+      "speed": 20.06,
+      "memory": 1075.24
+    },
+    {
+      "name": "Qwen 2.5 · 0.5B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 88.79,
+      "speed": 50.32,
+      "memory": 475.95
+    },
+    {
+      "name": "Qwen 2.5 · 1.5B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 225.02,
+      "speed": 20.08,
+      "memory": 1075.24
+    },
+    {
+      "name": "Qwen 2.5 · 3B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 424.67,
+      "speed": 10.47,
+      "memory": 2021.83
+    },
+    {
+      "name": "Qwen 3 · 0.6B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 115.5,
+      "speed": 30.34,
+      "memory": 779.52
+    },
+    {
+      "name": "Qwen 3 · 1.7B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 267.13,
+      "speed": 16.12,
+      "memory": 1541.24
+    },
+    {
+      "name": "Qwen 3 · 4B",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 561.04,
+      "speed": 7.29,
+      "memory": 2842.98
+    },
+    {
+      "name": "Qwen 3 · 4B(Instruct)",
+      "family": "Qwen",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 561.39,
+      "speed": 7.28,
+      "memory": 2842.98
+    },
+    {
+      "name": "TinyLlama 0.4 · 1.1B",
+      "family": "TinyLlama",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 154.72,
+      "speed": 26.48,
+      "memory": 772.15
+    },
+    {
+      "name": "TinyLlama 1 · 1.1B",
+      "family": "TinyLlama",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 155.12,
+      "speed": 26.45,
+      "memory": 772.06
+    },
+    {
+      "name": "Llama 2 · 7B",
+      "family": "Llama",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 923.46,
+      "speed": 4.16,
+      "memory": 5217.7
+    },
+    {
+      "name": "Llama 3.2 · 1B",
+      "family": "Llama",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 186.96,
+      "speed": 23.33,
+      "memory": 953.43
+    },
+    {
+      "name": "Llama 3.2 · 3B",
+      "family": "Llama",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 519.47,
+      "speed": 9.67,
+      "memory": 2347.69
+    },
+    {
+      "name": "OpenLLaMA 1 · 3B",
+      "family": "OpenLLaMA",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 837.25,
+      "speed": 5.3,
+      "memory": 2864.93
+    },
+    {
+      "name": "Gemma 1 · 2B",
+      "family": "Gemma",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 294.1,
+      "speed": 12.86,
+      "memory": 1836.43
+    },
+    {
+      "name": "Gemma 2 · 2B",
+      "family": "Gemma",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 351.08,
+      "speed": 11.44,
+      "memory": 2130.33
+    },
+    {
+      "name": "Gemma 3 · 270M",
+      "family": "Gemma",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 99.41,
+      "speed": 62.7,
+      "memory": 655.8
+    },
+    {
+      "name": "Gemma 3 · 1B",
+      "family": "Gemma",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 192.9,
+      "speed": 25.74,
+      "memory": 1146.57
+    },
+    {
+      "name": "Gemma 4 · E2B",
+      "family": "Gemma",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 416.5,
+      "speed": 14.67,
+      "memory": 3542.01
+    },
+    {
+      "name": "Gemma 4 · E4B",
+      "family": "Gemma",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 695.4,
+      "speed": 7.37,
+      "memory": 5776.59
+    },
+    {
+      "name": "Phi 1.5 · 1.3B",
+      "family": "Phi",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 271.04,
+      "speed": 15.86,
+      "memory": 1404.81
+    },
+    {
+      "name": "Phi 2 · 2.7B",
+      "family": "Phi",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 616.34,
+      "speed": 7.99,
+      "memory": 2605.29
+    },
+    {
+      "name": "Phi 3 · 3.8B",
+      "family": "Phi",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 773.47,
+      "speed": 6.44,
+      "memory": 3400.62
+    },
+    {
+      "name": "ChatGLM3 3 · 6B",
+      "family": "ChatGLM3",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 695.87,
+      "speed": 5.56,
+      "memory": 4048.54
+    },
+    {
+      "name": "MiniCPM 3 · 4B",
+      "family": "MiniCPM",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 934.52,
+      "speed": 4.39,
+      "memory": 4434.37
+    },
+    {
+      "name": "MiniCPM 4 · 0.5B",
+      "family": "MiniCPM",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 104.89,
+      "speed": 54.34,
+      "memory": 395.23
+    },
+    {
+      "name": "InternVL 2 · 1B",
+      "family": "InternVL",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 217.71,
+      "speed": 11.99,
+      "memory": 526.52
+    },
+    {
+      "name": "InternVL 3 · 1B",
+      "family": "InternVL",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 217.23,
+      "speed": 12,
+      "memory": 526.53
+    },
+    {
+      "name": "Qwen-VL 2 · 2B",
+      "family": "Qwen-VL",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 224.56,
+      "speed": 20.13,
+      "memory": 1315.36
+    },
+    {
+      "name": "Qwen-VL 2.5 · 3B",
+      "family": "Qwen-VL",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 423.65,
+      "speed": 10.5,
+      "memory": 2345.54
+    },
+    {
+      "name": "Qwen-VL 3 · 2B",
+      "family": "Qwen-VL",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 345.56,
+      "speed": 13.46,
+      "memory": 1704.13
+    },
+    {
+      "name": "Qwen-VL 3 · 4B",
+      "family": "Qwen-VL",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 694.6,
+      "speed": 6.45,
+      "memory": 3259.33
+    },
+    {
+      "name": "MobileVLM 2 · 1.7B",
+      "family": "MobileVLM",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 276.06,
+      "speed": 12.02,
+      "memory": 1331.29
+    },
+    {
+      "name": "MiniCPM-V 2.6 · 8B",
+      "family": "MiniCPM-V",
+      "platform": "A9(A311Y3)",
+      "dtype": "w4a16",
+      "seq": 128,
+      "context": 2048,
+      "tokens": 1920,
+      "ttft": 1214.82,
+      "speed": 2.07,
+      "memory": 4877.57
+    }
+  ],
+  "accuracy": [
+    {
+      "name": "MobileNetV2",
+      "task": "Classification",
+      "shape": "[1, 3, 224, 224]",
+      "dtype": "w8a8",
+      "dataset": "ImageNet val1000",
+      "metric": "Top1=67.00%; Top5=89.40%",
+      "latency": 2.318,
+      "memory": 11.6,
+      "bandwidth": 18.71
+    },
+    {
+      "name": "MobileNetV2",
+      "task": "Classification",
+      "shape": "[1, 3, 224, 224]",
+      "dtype": "w8a16",
+      "dataset": "ImageNet val1000",
+      "metric": "Top1=69.20%; Top5=90.10%",
+      "latency": 3.616,
+      "memory": 12.188,
+      "bandwidth": 18.856
+    },
+    {
+      "name": "ResNet50",
+      "task": "Classification",
+      "shape": "[1, 3, 224, 224]",
+      "dtype": "w8a8",
+      "dataset": "ImageNet val1000",
+      "metric": "Top1=72.40%; Top5=93.30%",
+      "latency": 4.945,
+      "memory": 31.133,
+      "bandwidth": 50.923
+    },
+    {
+      "name": "ResNet50",
+      "task": "Classification",
+      "shape": "[1, 3, 224, 224]",
+      "dtype": "w8a16",
+      "dataset": "ImageNet val1000",
+      "metric": "Top1=75.90%; Top5=93.50%",
+      "latency": 8.136,
+      "memory": 31.349,
+      "bandwidth": 69.406
+    },
+    {
+      "name": "YOLO11s",
+      "task": "Detection",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "dataset": "COCO subset 300",
+      "metric": "AP@0.5:0.95=47.83%; AP@0.5=65.11%; AP@0.75=51.06%",
+      "latency": 10.507,
+      "memory": 16.917,
+      "bandwidth": 80.378
+    },
+    {
+      "name": "YOLOv5n",
+      "task": "Detection",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "dataset": "COCO subset 300",
+      "metric": "AP@0.5:0.95=31.96%; AP@0.5=49.60%; AP@0.75=34.34%",
+      "latency": 4.206,
+      "memory": 6.768,
+      "bandwidth": 22.556
+    },
+    {
+      "name": "YOLOv5n",
+      "task": "Detection",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a16",
+      "dataset": "COCO subset 300",
+      "metric": "AP@0.5:0.95=32.65%; AP@0.5=49.45%; AP@0.75=35.41%",
+      "latency": 19.248,
+      "memory": 73.518,
+      "bandwidth": 178.187
+    },
+    {
+      "name": "YOLOv8n",
+      "task": "Detection",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "dataset": "COCO subset 300",
+      "metric": "AP@0.5:0.95=40.70%; AP@0.5=56.95%; AP@0.75=43.38%",
+      "latency": 17.904,
+      "memory": 73.066,
+      "bandwidth": 160.516
+    },
+    {
+      "name": "YOLOv8n",
+      "task": "Detection",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a16",
+      "dataset": "COCO subset 300",
+      "metric": "AP@0.5:0.95=41.66%; AP@0.5=57.67%; AP@0.75=45.19%",
+      "latency": 28.697,
+      "memory": 73.863,
+      "bandwidth": 202.247
+    },
+    {
+      "name": "YOLOv8n-pose",
+      "task": "Keypoints",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "dataset": "COCO keypoints subset 300",
+      "metric": "Box AP@0.5:0.95=45.16%; Keypoint AP@0.5:0.95=46.99%",
+      "latency": 5.86,
+      "memory": 7.47,
+      "bandwidth": 29.55
+    },
+    {
+      "name": "YOLOv8n-pose",
+      "task": "Keypoints",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a16",
+      "dataset": "COCO keypoints subset 300",
+      "metric": "Box AP@0.5:0.95=45.27%; Keypoint AP@0.5:0.95=48.14%",
+      "latency": 19.32,
+      "memory": 74.708,
+      "bandwidth": 209.853
+    },
+    {
+      "name": "YOLOv8n-seg",
+      "task": "Box/Mask",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "dataset": "COCO subset 300",
+      "metric": "Box AP@0.5:0.95=34.93%; Mask AP@0.5:0.95=31.22%",
+      "latency": 6.712,
+      "memory": 9.404,
+      "bandwidth": 48.942
+    },
+    {
+      "name": "YOLOv8n-seg",
+      "task": "Box/Mask",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a16",
+      "dataset": "COCO subset 300",
+      "metric": "Box AP@0.5:0.95=40.80%; Mask AP@0.5:0.95=33.30%",
+      "latency": 32.171,
+      "memory": 36.57,
+      "bandwidth": 160.16
+    },
+    {
+      "name": "YOLOX-s",
+      "task": "Detection",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a8",
+      "dataset": "COCO subset 300",
+      "metric": "AP@0.5:0.95=43.28%; AP@0.5=63.00%; AP@0.75=46.80%",
+      "latency": 11.199,
+      "memory": 15.581,
+      "bandwidth": 54.532
+    },
+    {
+      "name": "YOLOX-s",
+      "task": "Detection",
+      "shape": "[1, 3, 640, 640]",
+      "dtype": "w8a16",
+      "dataset": "COCO subset 300",
+      "metric": "AP@0.5:0.95=44.67%; AP@0.5=63.93%; AP@0.75=48.42%",
+      "latency": 29.506,
+      "memory": 81.984,
+      "bandwidth": 231.351
+    }
+  ],
+  "ppl": [
+    {
+      "name": "Phi-3.5-mini-instruct",
+      "baseline": 6.42,
+      "adla": 7.98,
+      "delta": 1.56
+    },
+    {
+      "name": "Llama-2-7B-chat",
+      "baseline": 7.63,
+      "adla": 8.86,
+      "delta": 1.23
+    },
+    {
+      "name": "open_llama_3b",
+      "baseline": 7.79,
+      "adla": 9.41,
+      "delta": 1.62
+    },
+    {
+      "name": "Llama-3.1-8B-Hermes-3",
+      "baseline": 8.1,
+      "adla": 8.31,
+      "delta": 0.21
+    },
+    {
+      "name": "TinyLlama-1.1B-Chat-v1.0",
+      "baseline": 8.45,
+      "adla": 9.73,
+      "delta": 1.28
+    },
+    {
+      "name": "Qwen2.5-1.5B-Instruct",
+      "baseline": 10.15,
+      "adla": 12.11,
+      "delta": 1.96
+    },
+    {
+      "name": "phi-2",
+      "baseline": 10.29,
+      "adla": 10.43,
+      "delta": 0.14
+    },
+    {
+      "name": "Qwen2-1.5B-Instruct",
+      "baseline": 10.43,
+      "adla": 11.23,
+      "delta": 0.8
+    },
+    {
+      "name": "Llama-3.2-3B-Instruct",
+      "baseline": 10.53,
+      "adla": 14.55,
+      "delta": 4.02
+    },
+    {
+      "name": "Qwen3-4B-Instruct-2507",
+      "baseline": 10.83,
+      "adla": 11.38,
+      "delta": 0.55
+    },
+    {
+      "name": "TinyLlama-1.1B-Chat-v0.4",
+      "baseline": 11.33,
+      "adla": 11.94,
+      "delta": 0.61
+    },
+    {
+      "name": "gemma-2-2b-it",
+      "baseline": 12.88,
+      "adla": 11.82,
+      "delta": -1.06
+    },
+    {
+      "name": "Llama-3.2-1B-Instruct",
+      "baseline": 14,
+      "adla": 14.79,
+      "delta": 0.79
+    },
+    {
+      "name": "Qwen1.5-1.8B-Chat",
+      "baseline": 14.84,
+      "adla": 16.5,
+      "delta": 1.66
+    },
+    {
+      "name": "Qwen2-0.5B-Instruct",
+      "baseline": 15.12,
+      "adla": 17.27,
+      "delta": 2.15
+    },
+    {
+      "name": "Qwen2.5-0.5B-Instruct",
+      "baseline": 15.19,
+      "adla": 16.94,
+      "delta": 1.75
+    },
+    {
+      "name": "MiniCPM3-4B",
+      "baseline": 16.26,
+      "adla": 10,
+      "delta": -6.26
+    },
+    {
+      "name": "Qwen3-1.7B",
+      "baseline": 17.15,
+      "adla": 20.59,
+      "delta": 3.44
+    },
+    {
+      "name": "gemma-3-4b-it",
+      "baseline": 17.25,
+      "adla": 33.47,
+      "delta": 16.22
+    },
+    {
+      "name": "Qwen-1.8B-chat",
+      "baseline": 21.21,
+      "adla": 22.58,
+      "delta": 1.37
+    },
+    {
+      "name": "Qwen3-0.6B",
+      "baseline": 21.9,
+      "adla": 23.71,
+      "delta": 1.81
+    },
+    {
+      "name": "gemma-2b-it",
+      "baseline": 22.99,
+      "adla": 22.59,
+      "delta": -0.4
+    },
+    {
+      "name": "phi-1_5",
+      "baseline": 23.16,
+      "adla": 21.79,
+      "delta": -1.37
+    },
+    {
+      "name": "gemma-3-1b-it",
+      "baseline": 29.12,
+      "adla": 35.37,
+      "delta": 6.25
+    },
+    {
+      "name": "Qwen1.5-0.5B-Chat",
+      "baseline": 31.39,
+      "adla": 28.43,
+      "delta": -2.96
+    },
+    {
+      "name": "ChatGLM3-6B",
+      "baseline": 34.98,
+      "adla": 48.79,
+      "delta": 13.81
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "baseline": 42.98,
+      "adla": 71.19,
+      "delta": 28.21
+    },
+    {
+      "name": "gemma-3-270m-it",
+      "baseline": 58.94,
+      "adla": 68.42,
+      "delta": 9.48
+    }
+  ],
+  "mmlu": [
+    {
+      "name": "MiniCPM3-4B",
+      "baseline": 64,
+      "adla": 61.6,
+      "delta": -2.400000000000002
+    },
+    {
+      "name": "Phi-3-mini-4k-instruct",
+      "baseline": 56.599999999999994,
+      "adla": 57.4,
+      "delta": 0.8000000000000007
+    },
+    {
+      "name": "Qwen2.5-0.5B-Instruct",
+      "baseline": 43.6,
+      "adla": 43,
+      "delta": -0.6000000000000005
+    },
+    {
+      "name": "Qwen3-4B-Instruct-2507 (Non-thinking)",
+      "baseline": 75.2,
+      "adla": 73,
+      "delta": -2.200000000000002
+    },
+    {
+      "name": "Qwen3-4B (Thinking)",
+      "baseline": 78.03,
+      "adla": 81.39999999999999,
+      "delta": 3.369999999999995
+    }
+  ]
+}
+;
+const PERF_CONFIG={cnn:{label:'CNN Throughput',metrics:{A311Y3:'A311Y3 · FPS',S905X5:'S905X5 · FPS',A311D2:'A311D2 · FPS'},note:'CNN FPS includes hardware and software execution time. Input shapes and precision vary by model. Compare platforms within the same model row.',cols:['name','shape','dtype','S905X5','A311D2','A311Y3']},llm:{label:'LLM / VLM Runtime',metrics:{speed:'Throughput · tokens/s',ttft:'TTFT · ms',memory:'Memory · MB'},note:'A9 (A311Y3), Armbian reference board, 8 GB / 16 GB configurations; W4A16, native model runtime test. Select one sequence/context/output configuration. VLM rows are not complete image-pipeline benchmarks.',cols:['name','platform','dtype','seq','context','tokens','ttft','speed','memory']},accuracy:{label:'CNN Accuracy Runs',metrics:{latency:'Latency · ms',memory:'Memory · MB',bandwidth:'Bandwidth · MB'},note:'Accuracy-run measurements are separate from the CNN throughput table. Dataset subsets and metrics differ; full metrics appear in the table. Bandwidth is reported in MB by the source, not MB/s.',cols:['name','task','dtype','dataset','metric','latency','memory','bandwidth']},ppl:{label:'LLM Perplexity',metrics:{adla:'ADLA W4A16 · PPL',baseline:'GGUF FP16 · PPL'},note:'wiki-text2, 300,258 tokens. Lower PPL is better. Baseline and ADLA values are plotted together; delta = ADLA − baseline.',cols:['name','baseline','adla','delta']},mmlu:{label:'MMLU Accuracy',metrics:{adla:'ADLA W4A16 · %',baseline:'GGUF FP16 · %'},note:'5-shot, 500 samples. GGUF FP16 tested on PC GPU; ADLA W4A16 on A311Y3. Higher is better. Delta is recalculated in percentage points, not relative percent.',cols:['name','baseline','adla','delta']}};
+const LABELS={name:'Model',shape:'Input shape',dtype:'Precision',platform:'Platform',seq:'SeqLen',context:'Max context',tokens:'New tokens',ttft:'TTFT (ms)',speed:'Tokens/s',memory:'Memory (MB)',bandwidth:'Bandwidth (MB)',latency:'Latency (ms)',task:'Task',dataset:'Validation',metric:'Accuracy metrics',baseline:'GGUF FP16',adla:'ADLA W4A16',delta:'Delta'};
+let perfSet='cnn',perfMetric='A311Y3',perfScenario=64,perfSort=null,perfAsc=false;
+function perfRows(){let rows=PERF_DATA[perfSet].filter(r=>perfSet!=='llm'||r.seq===Number(perfScenario));const q=search.value.toLowerCase().trim();rows=rows.filter(r=>Object.values(r).join(' ').toLowerCase().includes(q));const key=perfSort||perfMetric;return [...rows].sort((a,b)=>(typeof a[key]==='number'?a[key]-b[key]:String(a[key]).localeCompare(String(b[key])))*(perfAsc?1:-1))}
+function barChart(rows){const series=perfSet==='cnn'?['S905X5','A311D2','A311Y3']:['ppl','mmlu'].includes(perfSet)?['baseline','adla']:[perfMetric];const colors=['#2870cb','#29aab3','#8c71cd'];const max=Math.max(1,...rows.flatMap(r=>series.map(k=>r[k])));const rowH=series.length*15+23,H=45+rows.length*rowH,W=940,left=265,right=90,plot=W-left-right;let svg=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${escapeText(PERF_CONFIG[perfSet].label)} benchmark comparison">`;for(let t=0;t<=4;t++){const x=left+plot*t/4;svg+=`<path d="M${x} 28V${H-8}" stroke="#e3eaf3"/><text x="${x}" y="17" text-anchor="middle" fill="#728095" font-size="11">${(max*t/4).toFixed(1)}</text>`}rows.forEach((r,i)=>{const y=35+i*rowH;svg+=`<text x="${left-12}" y="${y+12}" text-anchor="end" fill="#35455f" font-size="11">${escapeText(r.name)}${perfSet==='accuracy'?' · '+escapeText(r.dtype):''}</text>`;series.forEach((k,j)=>{const val=r[k];svg+=`<rect x="${left}" y="${y+j*15}" width="${val/max*plot}" height="10" rx="3" fill="${colors[j]}"><title>${escapeText(r.name)} · ${LABELS[k]||k}: ${val}</title></rect><text x="${left+val/max*plot+7}" y="${y+j*15+9}" font-size="10" fill="#5d6e87">${val.toFixed(2)}</text>`})});svg+='</svg>';return `<div class="legend">${series.map((k,i)=>`<span><i style="background:${colors[i]}"></i>${escapeText(LABELS[k]||k)}</span>`).join('')}</div><div class="chart-scroll">${svg}</div>`}
+function scatterChart(rows){const maxX=Math.max(1,...rows.map(r=>r.memory)),maxY=Math.max(1,...rows.map(r=>r.speed)),W=750,H=340,left=65,bottom=280,pw=630,ph=235;let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="LLM memory in MB versus throughput in tokens per second">`;for(let i=0;i<=4;i++){const x=left+pw*i/4,y=bottom-ph*i/4;s+=`<path d="M${left} ${y}h${pw} M${x} 45V${bottom}" stroke="#e4ebf4"/><text x="${left-9}" y="${y+4}" text-anchor="end" font-size="11" fill="#728095">${(maxY*i/4).toFixed(1)}</text><text x="${x}" y="${bottom+20}" text-anchor="middle" font-size="11" fill="#728095">${(maxX*i/4).toFixed(0)}</text>`}rows.forEach(r=>{s+=`<circle cx="${left+r.memory/maxX*pw}" cy="${bottom-r.speed/maxY*ph}" r="6" fill="#247cce" fill-opacity=".7" tabindex="0"><title>${escapeText(r.name)}: ${r.memory} MB · ${r.speed} tokens/s</title></circle>`});return s+`<text x="380" y="330" text-anchor="middle" font-size="12" fill="#51657f">Memory (MB)</text><text x="18" y="165" transform="rotate(-90 18 165)" text-anchor="middle" font-size="12" fill="#51657f">Throughput (tokens/s)</text></svg>`}
+function renderPerf(){const host=document.getElementById('performance');const config=PERF_CONFIG[perfSet],rows=perfRows();const values=rows.map(r=>r[perfMetric]);const higher=perfSet==='cnn'||perfMetric==='speed'||perfSet==='mmlu';const best=rows.length?(higher?Math.max(...values):Math.min(...values)):null;const bestRow=rows.find(r=>r[perfMetric]===best);host.innerHTML=`<div class="perf-head"><div><span class="eyebrow">BENCHMARK EXPLORER</span><h2>Measure. Compare. Deploy.</h2><p>Published model benchmarks. Transparent test conditions.</p></div><a class="link" href="https://github.com/Amlogic-NN/amlnn-model-playground/blob/main/PERFORMANCE.md" target="_blank" rel="noopener noreferrer">Source data ↗</a></div><div class="perf-tabs">${Object.entries(PERF_CONFIG).map(([k,v])=>`<button data-set="${k}" aria-pressed="${k===perfSet}" class="${k===perfSet?'active':''}">${v.label}</button>`).join('')}</div><div class="perf-controls"><label>Metric <select id="perf-metric">${Object.entries(config.metrics).map(([k,v])=>`<option value="${k}" ${k===perfMetric?'selected':''}>${v}</option>`).join('')}</select></label>${perfSet==='llm'?`<label>Test configuration <select id="perf-scenario"><option value="64" ${Number(perfScenario)===64?'selected':''}>Seq 64 · Context 320 · Output 256</option><option value="128" ${Number(perfScenario)===128?'selected':''}>Seq 128 · Context 2048 · Output 1920</option></select></label>`:''}<button class="link" id="csv">Export filtered CSV ↓</button></div><div class="perf-stats"><div><small>Visible records</small><strong>${rows.length}</strong><span>${config.label}</span></div><div><small>${higher?'Highest':'Lowest'} selected value</small><strong>${best===null?'—':best.toFixed(2)}</strong><span>${bestRow?escapeText(bestRow.name):'No results'} · ${escapeText(config.metrics[perfMetric])}</span></div><div><small>Data snapshot</small><strong>Oct 12, 2026</strong><span>From Model Playground · no live polling</span></div></div><p class="perf-note">${config.note}</p><div class="perf-panel"><div class="panel-title"><h3>${config.label} comparison</h3><span>Zero baseline · hover for values</span></div>${rows.length?barChart(rows):'<p>No matching records. Clear the search to see all data.</p>'}</div>${perfSet==='llm'&&rows.length?`<div class="perf-panel"><div class="panel-title"><h3>Memory vs. throughput</h3><span>One point per model · hover for details</span></div>${scatterChart(rows)}</div>`:''}<div class="perf-panel"><div class="panel-title"><h3>Benchmark data</h3><span>Click a column heading to sort</span></div><div class="table-scroll"><table><thead><tr>${config.cols.map(k=>`<th><button data-sort="${k}">${LABELS[k]||k}${k===(perfSort||perfMetric)?(perfAsc?' ↑':' ↓'):''}</button></th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${config.cols.map(k=>`<td>${escapeText(typeof r[k]==='number'?r[k].toFixed(['seq','context','tokens'].includes(k)?0:2):r[k])}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div>`;
+host.querySelectorAll('[data-set]').forEach(b=>b.onclick=()=>{perfSet=b.dataset.set;perfMetric=Object.keys(PERF_CONFIG[perfSet].metrics)[0];perfSort=null;perfAsc=false;renderPerf()});host.querySelector('#perf-metric').onchange=e=>{perfMetric=e.target.value;perfSort=null;renderPerf()};const scenario=host.querySelector('#perf-scenario');if(scenario)scenario.onchange=e=>{perfScenario=Number(e.target.value);renderPerf()};host.querySelectorAll('[data-sort]').forEach(b=>b.onclick=()=>{if(perfSort===b.dataset.sort)perfAsc=!perfAsc;else{perfSort=b.dataset.sort;perfAsc=true}renderPerf()});host.querySelector('#csv').onclick=()=>{const quote=v=>'"'+String(v).replace(/"/g,'""')+'"';const text=[config.cols.map(quote).join(','),...rows.map(r=>config.cols.map(k=>quote(r[k])).join(','))].join('\r\n');const u=URL.createObjectURL(new Blob([text],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=u;a.download='amlogic-'+perfSet+'-benchmarks.csv';a.click();URL.revokeObjectURL(u)};
+}
+const originalRenderCards=renderCards;renderCards=function(){const perf=section==='performance';grid.hidden=perf;document.querySelector('.toolbar').hidden=perf;document.querySelector('.banner').hidden=perf;document.getElementById('performance').hidden=!perf;if(perf)renderPerf();else originalRenderCards()};
+
+selectSection(section);
 </script>
 </body></html>
