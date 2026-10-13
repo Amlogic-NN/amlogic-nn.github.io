@@ -20,6 +20,17 @@ body{background:var(--bg)}aside{background:#152b4c}.brand-caption{color:#b0bed1;
 .overview-intro{padding:27px 0 25px;border-bottom:1px solid var(--line);margin-bottom:25px}.overview-intro h2{font-size:27px;font-weight:600;letter-spacing:-.5px;margin:0 0 12px}.overview-intro p{color:#687586;max-width:720px;font-size:14px;line-height:1.8;margin:0 0 18px}.overview-label{font-size:14px;font-weight:600;color:#607084;margin:0 0 15px}.overview-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.overview-card{background:#fff;border:1px solid var(--line);border-radius:5px;padding:20px;display:flex;align-items:flex-start;gap:15px}.overview-card h3{font-size:16px;font-weight:600;margin:0 0 7px}.overview-card p{font-size:12px;color:#6c7889;line-height:1.7;margin:0 0 12px}.overview-icon{color:#55708d;flex-shrink:0;padding-top:2px}.overview-icon svg{width:22px;height:22px}.overview-card .link{cursor:pointer}@media(max-width:850px){.overview-grid{grid-template-columns:1fr}}
 /* Overview: modern editorial portal */
 .home-hero{display:grid;grid-template-columns:1.2fr 1fr;gap:38px;align-items:center;background:#102d52;color:#fff;padding:40px;border-radius:12px;overflow:hidden}.hero-kicker{font-size:10px;letter-spacing:1.8px;color:#a8c4e4;display:flex;gap:8px;align-items:center}.hero-kicker>span{width:6px;height:6px;border-radius:50%;background:#81b9f3}.hero-copy h2{font-size:clamp(32px,3.4vw,49px);line-height:1.08;letter-spacing:-1.8px;margin:20px 0;font-weight:650}.hero-copy h2 em{font-style:normal;color:#91bdf1}.hero-copy p{color:#b9c8da;max-width:430px;font-size:13px;line-height:1.8;margin:0 0 24px}.hero-actions{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.hero-button{background:#fff;color:#183f70;border:0;padding:11px 14px;border-radius:5px;font-size:12px;font-weight:600}.hero-button span{margin-left:12px}.hero-secondary{border:0;background:none;color:#d8e5f5;font-size:12px;padding:10px 0}.hero-stack{border:1px solid #456181;padding:20px;border-radius:8px;background:#193959;transform:rotate(-2deg)}.stack-caption{color:#a6bed9;font-size:9px;letter-spacing:1.7px;margin-bottom:14px}.stack-row{display:grid;grid-template-columns:22px 1fr;column-gap:12px;border-top:1px solid #456181;padding:14px 0}.stack-row>span{grid-row:span 2;font:10px ui-monospace,monospace;color:#87a7cd;padding-top:3px}.stack-row strong{font-size:13px;font-weight:550}.stack-row small{font-size:10px;color:#a7bed8;margin-top:3px}.stack-base{padding-top:16px;border-top:1px solid #6583a6;color:#d9e7f9;font-size:11px;font-weight:600;display:flex;justify-content:space-between;gap:10px}.stack-base span{font-size:8px;font-weight:400;color:#96b1d2;letter-spacing:.7px}.home-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:23px 0;margin-bottom:8px;border-bottom:1px solid var(--line)}.home-facts>div{padding:0 20px;border-right:1px solid var(--line);display:grid;gap:5px}.home-facts>div:first-child{padding-left:0}.home-facts>div:last-child{border:0}.home-facts strong{font-size:19px;font-weight:600;color:#29496d;letter-spacing:-.4px}.home-facts span{font-size:10px;color:#7e8b9a}.home-section-head{display:flex;justify-content:space-between;align-items:center;margin:26px 0 15px}.home-section-head h3{font-size:17px;letter-spacing:-.3px;margin:0;font-weight:600}.home-section-head>span{font-size:11px;color:#8691a0}.home-directory{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.home-tile{background:#fff;border:1px solid #dde4ec;border-radius:8px;padding:19px;text-align:left;color:#26374d;display:flex;flex-direction:column;transition:border-color .18s,background .18s}.home-tile:hover{background:#f5f8fc;border-color:#829fbe}.tile-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px}.tile-icon svg{width:23px;height:23px;display:block;color:#466c99}.tile-arrow{font-size:18px;color:#98a8bb}.tile-kicker{font-size:8px;letter-spacing:1.1px;color:#8190a2}.home-tile h3{font-size:18px;letter-spacing:-.4px;font-weight:600;margin:5px 0 9px}.home-tile p{font-size:12px;line-height:1.7;color:#778498;margin:0 0 17px}.tile-bottom{border-top:1px solid #e8edf3;margin-top:auto;padding-top:12px;display:flex;justify-content:space-between;gap:7px;font-size:9px;color:#8a96a5}.tile-bottom>span{color:#446993;white-space:nowrap}.tile-featured{background:#edf3fb;border-color:#cddbec}.tile-featured:hover{background:#e4eefb}.home-directory .home-tile:last-child{grid-column:span 1}@media(max-width:1050px){.home-hero{padding:28px;gap:24px}.home-directory{grid-template-columns:repeat(2,minmax(0,1fr))}.home-facts strong{font-size:16px}.home-facts>div{padding:0 12px}}@media(max-width:780px){.home-hero{grid-template-columns:1fr}.hero-stack{transform:none}.home-facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.home-facts>div{border:0;padding:0}.home-section-head>span{display:none}}@media(max-width:500px){.home-directory{grid-template-columns:1fr}.home-hero{padding:24px}.hero-copy h2{font-size:37px}.hero-stack{padding:16px}.home-tile{padding:17px}}
+/* Subtle motion */
+@keyframes portal-enter{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+@keyframes chart-expand{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.home-hero{animation:portal-enter .45s ease-out both}.home-facts{animation:portal-enter .45s .08s ease-out both}.home-tile,.card{animation:portal-enter .35s ease-out both;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background .18s ease}.home-tile:nth-child(2),.card:nth-child(2){animation-delay:.04s}.home-tile:nth-child(3),.card:nth-child(3){animation-delay:.08s}.home-tile:nth-child(4),.card:nth-child(4){animation-delay:.12s}.home-tile:nth-child(5),.card:nth-child(5){animation-delay:.16s}.home-tile:nth-child(6),.card:nth-child(6){animation-delay:.20s}.home-tile:nth-child(7){animation-delay:.24s}.home-tile:hover,.card:hover{transform:translateY(-2px);box-shadow:0 5px 14px #24476d0c}.tile-arrow{transition:transform .18s ease,color .18s ease}.home-tile:hover .tile-arrow{transform:translate(2px,-2px);color:#315d91}.primary,.hero-button,.hero-secondary,.link,.nav button,.filters button{transition:background .16s ease,color .16s ease,box-shadow .16s ease}.primary:active,.hero-button:active,.home-tile:active{transform:translateY(1px)}.perf-panel,.perf-stats>div{animation:portal-enter .3s ease-out both}.chart-scroll rect{transform-box:fill-box;transform-origin:left;animation:chart-expand .45s ease-out both}.hero-stack{transition:transform .3s ease}.home-hero:hover .hero-stack{transform:rotate(0deg)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.home-tile:hover,.card:hover,.primary:active,.hero-button:active,.home-tile:active{transform:none!important}.hero-stack,.home-hero:hover .hero-stack{transform:none!important}}
+.home-hero{position:relative;isolation:isolate}.hero-particles{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}.hero-copy,.hero-stack{position:relative;z-index:1}.hero-stack{background:#193959e8}@media(prefers-reduced-motion:reduce){.hero-particles{display:none}}
+/* Cinematic homepage hero */
+.home-hero{background:radial-gradient(ellipse at 83% 48%,#104c85 0%,#071e3e 42%,#040d20 100%);border:1px solid #234f7d;min-height:365px;padding:45px;box-shadow:0 12px 35px #092b4b22;isolation:isolate}.hero-copy h2{font-size:clamp(39px,4.5vw,62px);font-weight:700;letter-spacing:-2px}.hero-copy h2 em{color:#87deff;text-shadow:0 0 24px #22aaff44}.hero-kicker{color:#93d6ff;letter-spacing:2px}.hero-kicker>span{background:#4ddcff;box-shadow:0 0 12px #4ddcff}.hero-stack{background:#0d2846cc;border:1px solid #5186b866;box-shadow:0 0 35px #2089ce20,inset 0 0 25px #2289d00e;backdrop-filter:blur(8px);transform:perspective(850px) rotateY(-9deg) rotateZ(-2deg);animation:stack-float 7s ease-in-out infinite}.home-hero:hover .hero-stack{transform:perspective(850px) rotateY(-9deg) rotateZ(-2deg)}.stack-caption{color:#70caff}.stack-row{border-color:#67b6ed33}.stack-row>span{color:#5cbfff}.hero-button{background:#d7f3ff;box-shadow:0 0 20px #4dcaff25}.hero-button:hover{background:#fff;box-shadow:0 0 28px #4dcaff55}.sci-orbit{position:absolute;width:420px;height:420px;right:-65px;top:-30px;border-radius:50%;border:1px solid #76c7ff33;border-top:2px solid #63d7ff;border-bottom:2px solid #63d7ff;box-shadow:0 0 18px #43baff18;z-index:0;pointer-events:none;animation:orbit-spin 24s linear infinite}.orbit-two{width:540px;height:540px;right:-125px;top:-90px;border:1px dashed #539dcc55;animation-direction:reverse;animation-duration:50s}.sci-scan{position:absolute;inset:0;pointer-events:none;z-index:0;background:linear-gradient(115deg,transparent 35%,#41bbff0d 47%,#79dfff33 50%,#41bbff0d 53%,transparent 65%);transform:translateX(-100%);animation:hero-scan 9s ease-in-out infinite}.hero-particles{opacity:.9}.hero-copy p{color:#b9cee7}.stack-base{border-color:#56a9e866;color:#bcdeff}
+@keyframes orbit-spin{to{transform:rotate(360deg)}}@keyframes hero-scan{0%,15%{transform:translateX(-100%)}70%,100%{transform:translateX(100%)}}@keyframes stack-float{0%,100%{translate:0 0}50%{translate:0 -7px}}
+@media(max-width:780px){.home-hero{padding:27px;min-height:0}.hero-copy h2{font-size:42px}.hero-stack{transform:none}.home-hero:hover .hero-stack{transform:none}.sci-orbit{opacity:.5}}
+@media(prefers-reduced-motion:reduce){.sci-scan{display:none}.sci-orbit{animation:none}.hero-stack{translate:0 0;transform:none!important}}
 </style>
 </head>
 <body>
@@ -1154,7 +1165,7 @@ const RESOURCES=[
     "category": "LLM",
     "name": "DeepSeek-R1-1.5B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1165,14 +1176,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Qwen-1.8B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1183,14 +1194,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Qwen1.5-0.5B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1201,14 +1212,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Qwen1.5-1.8B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1219,14 +1230,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Qwen2-0.5B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1237,14 +1248,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Qwen2-1.5B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1255,14 +1266,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Qwen2.5-0.5B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1273,14 +1284,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Qwen2.5-1.5B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1291,14 +1302,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Qwen2.5-3B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1309,14 +1320,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Qwen3-0.6B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1327,14 +1338,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Qwen3-1.7B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1345,14 +1356,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Qwen3-4B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1363,14 +1374,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "TinyLlama0.4-1.1B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1381,14 +1392,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "TinyLlama1-1.1B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1399,14 +1410,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Llama2-7B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1417,14 +1428,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Llama3.2-1B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1435,14 +1446,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Llama3.2-3B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1453,14 +1464,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "OpenLLaMA-3B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1471,14 +1482,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Gemma1-2B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1489,14 +1500,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Gemma2-2B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1507,14 +1518,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Gemma3-270M",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1525,14 +1536,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Gemma3-1B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1543,14 +1554,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Gemma4-E2B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1561,14 +1572,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Gemma4-E4B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1579,14 +1590,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Phi1.5-1.3B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1597,14 +1608,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Phi2-2.7B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1615,14 +1626,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "Phi3-3.8B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1633,14 +1644,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "ChatGLM3-6B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1651,14 +1662,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "MiniCPM3-4B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1669,14 +1680,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "LLM",
     "name": "MiniCPM4-0.5B",
     "en": "LLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1687,14 +1698,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "code",
     "color": "#8f7cbe",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "VLM",
     "name": "InternVL2-1B",
     "en": "VLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1705,14 +1716,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "eye",
     "color": "#4ca29b",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "VLM",
     "name": "InternVL3-1B",
     "en": "VLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1723,14 +1734,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "eye",
     "color": "#4ca29b",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "VLM",
     "name": "Qwen-VL2-2B",
     "en": "VLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1741,14 +1752,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "eye",
     "color": "#4ca29b",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "VLM",
     "name": "Qwen-VL2.5-3B",
     "en": "VLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1759,14 +1770,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "eye",
     "color": "#4ca29b",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "VLM",
     "name": "Qwen-VL3-2B",
     "en": "VLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1777,14 +1788,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "eye",
     "color": "#4ca29b",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "VLM",
     "name": "Qwen-VL3-4B",
     "en": "VLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1795,14 +1806,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "eye",
     "color": "#4ca29b",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "VLM",
     "name": "MobileVLM-V2-1.7B",
     "en": "VLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1813,14 +1824,14 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "eye",
     "color": "#4ca29b",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "demos",
     "category": "VLM",
     "name": "MiniCPM-V2.6-8B",
     "en": "VLM · W4A16",
-    "desc": "See the shared LLM Python example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
+    "desc": "See the shared LLM example guide for model setup and inference. Supported platforms: A311Y3 / C305X2 / A123X.",
     "tags": [
       "w4a16",
       "A311Y3",
@@ -1831,7 +1842,7 @@ const RESOURCES=[
     "status": "Supported",
     "icon": "eye",
     "color": "#4ca29b",
-    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs/python"
+    "url": "https://github.com/Amlogic-NN/amlnn-model-playground/tree/main/examples/LLMs"
   },
   {
     "section": "start",
@@ -3755,11 +3766,28 @@ function renderOverview(){
  const items=order.map(id=>SECTIONS.find(s=>s.id===id)).filter(s=>(s.name+' '+OVERVIEW_TEXT[s.id]).toLowerCase().includes(q));
  const models=RESOURCES.filter(r=>r.section==='demos'&&r.status==='Supported').length,docs=RESOURCES.filter(r=>r.section==='start').length;
  const copy={sdk:['BUILD & INTEGRATE','SDK / Toolkit','From model conversion to native inference. Choose the right Python or C/C++ interface.','Python · C/C++'],demos:['EXPLORE & RUN','Model Demos','Find example code, quantization formats and platform support for your model.',models+' supported models'],performance:['MEASURE & COMPARE','Performance','Inspect throughput, latency, memory and accuracy under documented test conditions.','CNN · LLM · VLM'],models:['DOWNLOAD & DEPLOY','ADLA Hub','Precompiled model packages, available on Hugging Face and ModelScope.','2 model repositories'],start:['READ & LEARN','Doc Center','Quick starts, API references, operator lists and deployment guides in one place.',docs+' document entries'],agents:['CONNECT & EXTEND','Agent Examples','Reference scenarios and an OpenAI-compatible Agent client integration guide.','Application workflows'],skills:['TOOLS & CAPABILITIES','Skills / MCP','Discover vision, audio and tool integration resources for your applications.','Published links coming soon']};
- const host=document.getElementById('overview');host.innerHTML=`<section class="home-hero"><div class="hero-copy"><div class="hero-kicker"><span></span> AMLOGIC AI DEVELOPMENT</div><h2>Build on the edge.<br><em>Start here.</em></h2><p>One place for the tools, models and documentation you need to develop on Amlogic platforms.</p><div class="hero-actions"><button data-open="start" class="hero-button">Explore documentation <span>↗</span></button><button data-open="demos" class="hero-secondary">Browse models →</button></div></div><div class="hero-stack" aria-hidden="true"><div class="stack-caption">THE DEVELOPMENT STACK</div><div class="stack-row"><span>01</span><strong>Applications</strong><small>Agents / Skills / MCP</small></div><div class="stack-row"><span>02</span><strong>Interfaces</strong><small>Python / C++ / OpenAI API</small></div><div class="stack-row"><span>03</span><strong>Models & Runtime</strong><small>CNN / LLM / VLM / ADLA</small></div><div class="stack-base">AMLOGIC NPU <span>ON-DEVICE INFERENCE</span></div></div></section><div class="home-facts"><div><strong>${models}</strong><span>Supported model entries</span></div><div><strong>${docs}</strong><span>Documentation resources</span></div><div><strong>Python + C/C++</strong><span>SDK integration paths</span></div><div><strong>OpenAI API</strong><span>Agent Server interface</span></div></div><div class="home-section-head"><h3>Find your next step</h3><span>Explore the developer ecosystem</span></div><div class="home-directory">${items.map(s=>{const c=copy[s.id];return `<button class="home-tile ${s.id==='sdk'?'tile-featured':''}" data-open="${s.id}"><div class="tile-top"><span class="tile-icon">${svg(s.icon)}</span><span class="tile-arrow">↗</span></div><small class="tile-kicker">${c[0]}</small><h3>${c[1]}</h3><p>${c[2]}</p><div class="tile-bottom">${c[3]}<span>Explore →</span></div></button>`}).join('')}</div>${items.length?'':'<p>No matching sections.</p>'}`;
+ const host=document.getElementById('overview');host.innerHTML=`<section class="home-hero"><div class="sci-orbit orbit-one" aria-hidden="true"></div><div class="sci-orbit orbit-two" aria-hidden="true"></div><div class="sci-scan" aria-hidden="true"></div><canvas class="hero-particles" aria-hidden="true"></canvas><div class="hero-copy"><div class="hero-kicker"><span></span> AMLOGIC AI DEVELOPMENT</div><h2>Build on the edge.<br><em>Start here.</em></h2><p>One place for the tools, models and documentation you need to develop on Amlogic platforms.</p><div class="hero-actions"><button data-open="start" class="hero-button">Explore documentation <span>↗</span></button><button data-open="demos" class="hero-secondary">Browse models →</button></div></div><div class="hero-stack" aria-hidden="true"><div class="stack-caption">THE DEVELOPMENT STACK</div><div class="stack-row"><span>01</span><strong>Applications</strong><small>Agents / Skills / MCP</small></div><div class="stack-row"><span>02</span><strong>Interfaces</strong><small>Python / C++ / OpenAI API</small></div><div class="stack-row"><span>03</span><strong>Models & Runtime</strong><small>CNN / LLM / VLM / ADLA</small></div><div class="stack-base">AMLOGIC NPU <span>ON-DEVICE INFERENCE</span></div></div></section><div class="home-facts"><div><strong>${models}</strong><span>Supported model entries</span></div><div><strong>${docs}</strong><span>Documentation resources</span></div><div><strong>Python + C/C++</strong><span>SDK integration paths</span></div><div><strong>OpenAI API</strong><span>Agent Server interface</span></div></div><div class="home-section-head"><h3>Find your next step</h3><span>Explore the developer ecosystem</span></div><div class="home-directory">${items.map(s=>{const c=copy[s.id];return `<button class="home-tile ${s.id==='sdk'?'tile-featured':''}" data-open="${s.id}"><div class="tile-top"><span class="tile-icon">${svg(s.icon)}</span><span class="tile-arrow">↗</span></div><small class="tile-kicker">${c[0]}</small><h3>${c[1]}</h3><p>${c[2]}</p><div class="tile-bottom">${c[3]}<span>Explore →</span></div></button>`}).join('')}</div>${items.length?'':'<p>No matching sections.</p>'}`;
  host.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>{search.value='';selectSection(b.dataset.open)});
+ startHeroParticles();
 }
 
-const priorRenderCards=renderCards;renderCards=function(){const home=section==='home';document.getElementById('overview').hidden=!home;if(home){grid.hidden=true;document.querySelector('.toolbar').hidden=true;document.querySelector('.banner').hidden=true;document.getElementById('performance').hidden=true;renderOverview()}else priorRenderCards()};
+let particleCleanup=()=>{};
+function startHeroParticles(){
+ particleCleanup();
+ if(typeof window==='undefined'||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ const canvas=document.querySelector('.hero-particles');if(!canvas)return;
+ const hero=canvas.parentElement,ctx=canvas.getContext('2d');if(!ctx)return;
+ let width=0,height=0,frame=0,previous=0,points=[],pointer=null,disposed=false;
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+ function resize(){const box=hero.getBoundingClientRect();width=box.width;height=box.height;const dpr=Math.min(window.devicePixelRatio||1,2);canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);points=Array.from({length:Math.min(115,Math.max(45,Math.floor(width/10)))},()=>({x:Math.random()*width,y:Math.random()*height,vx:25+Math.random()*65,vy:(Math.random()-.5)*18,r:.8+Math.random()*1.5}));}
+ function tick(time){if(disposed)return;if(section!=='home'||!canvas.isConnected){stop();return;}const dt=Math.min((time-previous)/1000,.05);previous=time;ctx.clearRect(0,0,width,height);if(pointer){const glow=ctx.createRadialGradient(pointer.x,pointer.y,0,pointer.x,pointer.y,180);glow.addColorStop(0,'rgba(42,171,255,.22)');glow.addColorStop(1,'rgba(42,171,255,0)');ctx.fillStyle=glow;ctx.fillRect(0,0,width,height);}for(const p of points){p.x=(p.x+p.vx*dt+width)%width;p.y=(p.y+p.vy*dt+height)%height;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle='rgba(130,217,255,.78)';ctx.shadowBlur=8;ctx.shadowColor='#3cc9ff';ctx.fill();ctx.shadowBlur=0;ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(p.x-p.vx*.15,p.y-p.vy*.15);ctx.strokeStyle='rgba(93,183,255,.24)';ctx.lineWidth=.7;ctx.stroke();}
+ for(let i=0;i<points.length;i++){for(let j=i+1;j<points.length;j++){const a=points[i],b=points[j],distance=Math.hypot(a.x-b.x,a.y-b.y);if(distance<85){ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.strokeStyle='rgba(133,180,235,'+((1-distance/85)*.23)+')';ctx.lineWidth=.65;ctx.stroke();}}if(pointer){const p=points[i],d=Math.hypot(p.x-pointer.x,p.y-pointer.y);if(d<150){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(pointer.x,pointer.y);ctx.strokeStyle='rgba(167,210,255,'+((1-d/150)*.25)+')';ctx.stroke();}}}frame=requestAnimationFrame(tick);}
+ function move(e){const b=hero.getBoundingClientRect();pointer={x:e.clientX-b.left,y:e.clientY-b.top};}function leave(){pointer=null;}function visibility(){cancelAnimationFrame(frame);if(!document.hidden&&!disposed){previous=performance.now();frame=requestAnimationFrame(tick);}}function motion(){if(reduced.matches)stop();}
+ const observer=new ResizeObserver(resize);observer.observe(hero);hero.addEventListener('pointermove',move);hero.addEventListener('pointerleave',leave);document.addEventListener('visibilitychange',visibility);reduced.addEventListener('change',motion);
+ function stop(){if(disposed)return;disposed=true;cancelAnimationFrame(frame);observer.disconnect();hero.removeEventListener('pointermove',move);hero.removeEventListener('pointerleave',leave);document.removeEventListener('visibilitychange',visibility);reduced.removeEventListener('change',motion);ctx.clearRect(0,0,width,height);}
+ particleCleanup=stop;resize();previous=performance.now();frame=requestAnimationFrame(tick);
+}
+const priorRenderCards=renderCards;renderCards=function(){const home=section==='home';if(!home)particleCleanup();document.getElementById('overview').hidden=!home;if(home){grid.hidden=true;document.querySelector('.toolbar').hidden=true;document.querySelector('.banner').hidden=true;document.getElementById('performance').hidden=true;renderOverview()}else priorRenderCards()};
 
 selectSection(section);
 </script>
